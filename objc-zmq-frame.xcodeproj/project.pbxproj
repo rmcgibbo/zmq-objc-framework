@@ -8,8 +8,350 @@
 
 /* Begin PBXBuildFile section */
 		2906C7DA165B1F7E000D43E4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2906C7D9165B1F7E000D43E4 /* Cocoa.framework */; };
-		2906C7E4165B1F7E000D43E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2906C7E2165B1F7E000D43E4 /* InfoPlist.strings */; };
-		2906C7E8165B1F7E000D43E4 /* objc_zmq_frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2906C7E7165B1F7E000D43E4 /* objc_zmq_frame.m */; };
+		2906C7FD165B2001000D43E4 /* ZMQContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 2906C7F8165B2001000D43E4 /* ZMQContext.h */; };
+		2906C7FE165B2001000D43E4 /* ZMQContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2906C7F9165B2001000D43E4 /* ZMQContext.m */; };
+		2906C7FF165B2001000D43E4 /* ZMQObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 2906C7FA165B2001000D43E4 /* ZMQObjC.h */; };
+		2906C800165B2001000D43E4 /* ZMQSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 2906C7FB165B2001000D43E4 /* ZMQSocket.h */; };
+		2906C801165B2001000D43E4 /* ZMQSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2906C7FC165B2001000D43E4 /* ZMQSocket.m */; };
+		2906CCB9165B23AF000D43E4 /* AUTHORS in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB22165B23AF000D43E4 /* AUTHORS */; };
+		2906CCBA165B23AF000D43E4 /* autogen.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB23165B23AF000D43E4 /* autogen.sh */; };
+		2906CCBB165B23AF000D43E4 /* c_local_lat.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB27165B23AF000D43E4 /* c_local_lat.vcproj */; };
+		2906CCBC165B23AF000D43E4 /* c_local_thr.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB29165B23AF000D43E4 /* c_local_thr.vcproj */; };
+		2906CCBD165B23AF000D43E4 /* c_remote_lat.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB2B165B23AF000D43E4 /* c_remote_lat.vcproj */; };
+		2906CCBE165B23AF000D43E4 /* c_remote_thr.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB2D165B23AF000D43E4 /* c_remote_thr.vcproj */; };
+		2906CCBF165B23AF000D43E4 /* inproc_lat.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB2F165B23AF000D43E4 /* inproc_lat.vcproj */; };
+		2906CCC0165B23AF000D43E4 /* inproc_thr.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB31165B23AF000D43E4 /* inproc_thr.vcproj */; };
+		2906CCC1165B23AF000D43E4 /* libzmq.vcproj in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB33165B23AF000D43E4 /* libzmq.vcproj */; };
+		2906CCC3165B23AF000D43E4 /* Makefile.am in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB35165B23AF000D43E4 /* Makefile.am */; };
+		2906CCC4165B23AF000D43E4 /* Makefile.in in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB36165B23AF000D43E4 /* Makefile.in */; };
+		2906CCC5165B23AF000D43E4 /* msvc.sln in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB37165B23AF000D43E4 /* msvc.sln */; };
+		2906CCC6165B23AF000D43E4 /* platform.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CB38165B23AF000D43E4 /* platform.hpp */; };
+		2906CCC9165B23AF000D43E4 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB3C165B23AF000D43E4 /* ChangeLog */; };
+		2906CCCA165B23AF000D43E4 /* compile in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB3E165B23AF000D43E4 /* compile */; };
+		2906CCCB165B23AF000D43E4 /* config.guess in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB3F165B23AF000D43E4 /* config.guess */; };
+		2906CCCC165B23AF000D43E4 /* config.sub in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB40165B23AF000D43E4 /* config.sub */; };
+		2906CCCD165B23AF000D43E4 /* depcomp in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB41165B23AF000D43E4 /* depcomp */; };
+		2906CCCE165B23AF000D43E4 /* install-sh in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB42165B23AF000D43E4 /* install-sh */; };
+		2906CCD0165B23AF000D43E4 /* ltmain.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB44165B23AF000D43E4 /* ltmain.sh */; };
+		2906CCD5165B23AF000D43E4 /* missing in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB49165B23AF000D43E4 /* missing */; };
+		2906CCD6165B23AF000D43E4 /* config.log in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB4A165B23AF000D43E4 /* config.log */; };
+		2906CCD7165B23AF000D43E4 /* config.status in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB4B165B23AF000D43E4 /* config.status */; };
+		2906CCD8165B23AF000D43E4 /* configure in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB4C165B23AF000D43E4 /* configure */; };
+		2906CCDA165B23AF000D43E4 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB4E165B23AF000D43E4 /* COPYING */; };
+		2906CCDB165B23AF000D43E4 /* COPYING.LESSER in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB4F165B23AF000D43E4 /* COPYING.LESSER */; };
+		2906CCDC165B23AF000D43E4 /* asciidoc.conf in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB51165B23AF000D43E4 /* asciidoc.conf */; };
+		2906CCE0165B23AF000D43E4 /* zmq.7 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB55165B23AF000D43E4 /* zmq.7 */; };
+		2906CCE1165B23AF000D43E4 /* zmq.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB56165B23AF000D43E4 /* zmq.html */; };
+		2906CCE2165B23AF000D43E4 /* zmq.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB57165B23AF000D43E4 /* zmq.txt */; };
+		2906CCE3165B23AF000D43E4 /* zmq_bind.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB58165B23AF000D43E4 /* zmq_bind.3 */; };
+		2906CCE4165B23AF000D43E4 /* zmq_bind.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB59165B23AF000D43E4 /* zmq_bind.html */; };
+		2906CCE5165B23AF000D43E4 /* zmq_bind.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB5A165B23AF000D43E4 /* zmq_bind.txt */; };
+		2906CCE6165B23AF000D43E4 /* zmq_close.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB5B165B23AF000D43E4 /* zmq_close.3 */; };
+		2906CCE7165B23AF000D43E4 /* zmq_close.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB5C165B23AF000D43E4 /* zmq_close.html */; };
+		2906CCE8165B23AF000D43E4 /* zmq_close.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB5D165B23AF000D43E4 /* zmq_close.txt */; };
+		2906CCE9165B23AF000D43E4 /* zmq_connect.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB5E165B23AF000D43E4 /* zmq_connect.3 */; };
+		2906CCEA165B23AF000D43E4 /* zmq_connect.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB5F165B23AF000D43E4 /* zmq_connect.html */; };
+		2906CCEB165B23AF000D43E4 /* zmq_connect.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB60165B23AF000D43E4 /* zmq_connect.txt */; };
+		2906CCEC165B23AF000D43E4 /* zmq_cpp.7 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB61165B23AF000D43E4 /* zmq_cpp.7 */; };
+		2906CCED165B23AF000D43E4 /* zmq_cpp.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB62165B23AF000D43E4 /* zmq_cpp.html */; };
+		2906CCEE165B23AF000D43E4 /* zmq_cpp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB63165B23AF000D43E4 /* zmq_cpp.txt */; };
+		2906CCEF165B23AF000D43E4 /* zmq_device.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB64165B23AF000D43E4 /* zmq_device.3 */; };
+		2906CCF0165B23AF000D43E4 /* zmq_device.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB65165B23AF000D43E4 /* zmq_device.html */; };
+		2906CCF1165B23AF000D43E4 /* zmq_device.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB66165B23AF000D43E4 /* zmq_device.txt */; };
+		2906CCF2165B23AF000D43E4 /* zmq_epgm.7 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB67165B23AF000D43E4 /* zmq_epgm.7 */; };
+		2906CCF3165B23AF000D43E4 /* zmq_epgm.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB68165B23AF000D43E4 /* zmq_epgm.html */; };
+		2906CCF4165B23AF000D43E4 /* zmq_epgm.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB69165B23AF000D43E4 /* zmq_epgm.txt */; };
+		2906CCF5165B23AF000D43E4 /* zmq_errno.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB6A165B23AF000D43E4 /* zmq_errno.3 */; };
+		2906CCF6165B23AF000D43E4 /* zmq_errno.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB6B165B23AF000D43E4 /* zmq_errno.html */; };
+		2906CCF7165B23AF000D43E4 /* zmq_errno.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB6C165B23AF000D43E4 /* zmq_errno.txt */; };
+		2906CCF8165B23AF000D43E4 /* zmq_getsockopt.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB6D165B23AF000D43E4 /* zmq_getsockopt.3 */; };
+		2906CCF9165B23AF000D43E4 /* zmq_getsockopt.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB6E165B23AF000D43E4 /* zmq_getsockopt.html */; };
+		2906CCFA165B23AF000D43E4 /* zmq_getsockopt.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB6F165B23AF000D43E4 /* zmq_getsockopt.txt */; };
+		2906CCFB165B23AF000D43E4 /* zmq_init.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB70165B23AF000D43E4 /* zmq_init.3 */; };
+		2906CCFC165B23AF000D43E4 /* zmq_init.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB71165B23AF000D43E4 /* zmq_init.html */; };
+		2906CCFD165B23AF000D43E4 /* zmq_init.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB72165B23AF000D43E4 /* zmq_init.txt */; };
+		2906CCFE165B23AF000D43E4 /* zmq_inproc.7 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB73165B23AF000D43E4 /* zmq_inproc.7 */; };
+		2906CCFF165B23AF000D43E4 /* zmq_inproc.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB74165B23AF000D43E4 /* zmq_inproc.html */; };
+		2906CD00165B23AF000D43E4 /* zmq_inproc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB75165B23AF000D43E4 /* zmq_inproc.txt */; };
+		2906CD01165B23AF000D43E4 /* zmq_ipc.7 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB76165B23AF000D43E4 /* zmq_ipc.7 */; };
+		2906CD02165B23B0000D43E4 /* zmq_ipc.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB77165B23AF000D43E4 /* zmq_ipc.html */; };
+		2906CD03165B23B0000D43E4 /* zmq_ipc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB78165B23AF000D43E4 /* zmq_ipc.txt */; };
+		2906CD04165B23B0000D43E4 /* zmq_msg_close.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB79165B23AF000D43E4 /* zmq_msg_close.3 */; };
+		2906CD05165B23B0000D43E4 /* zmq_msg_close.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB7A165B23AF000D43E4 /* zmq_msg_close.html */; };
+		2906CD06165B23B0000D43E4 /* zmq_msg_close.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB7B165B23AF000D43E4 /* zmq_msg_close.txt */; };
+		2906CD07165B23B0000D43E4 /* zmq_msg_copy.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB7C165B23AF000D43E4 /* zmq_msg_copy.3 */; };
+		2906CD08165B23B0000D43E4 /* zmq_msg_copy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB7D165B23AF000D43E4 /* zmq_msg_copy.html */; };
+		2906CD09165B23B0000D43E4 /* zmq_msg_copy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB7E165B23AF000D43E4 /* zmq_msg_copy.txt */; };
+		2906CD0A165B23B0000D43E4 /* zmq_msg_data.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB7F165B23AF000D43E4 /* zmq_msg_data.3 */; };
+		2906CD0B165B23B0000D43E4 /* zmq_msg_data.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB80165B23AF000D43E4 /* zmq_msg_data.html */; };
+		2906CD0C165B23B0000D43E4 /* zmq_msg_data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB81165B23AF000D43E4 /* zmq_msg_data.txt */; };
+		2906CD0D165B23B0000D43E4 /* zmq_msg_init.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB82165B23AF000D43E4 /* zmq_msg_init.3 */; };
+		2906CD0E165B23B0000D43E4 /* zmq_msg_init.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB83165B23AF000D43E4 /* zmq_msg_init.html */; };
+		2906CD0F165B23B0000D43E4 /* zmq_msg_init.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB84165B23AF000D43E4 /* zmq_msg_init.txt */; };
+		2906CD10165B23B0000D43E4 /* zmq_msg_init_data.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB85165B23AF000D43E4 /* zmq_msg_init_data.3 */; };
+		2906CD11165B23B0000D43E4 /* zmq_msg_init_data.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB86165B23AF000D43E4 /* zmq_msg_init_data.html */; };
+		2906CD12165B23B0000D43E4 /* zmq_msg_init_data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB87165B23AF000D43E4 /* zmq_msg_init_data.txt */; };
+		2906CD13165B23B0000D43E4 /* zmq_msg_init_size.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB88165B23AF000D43E4 /* zmq_msg_init_size.3 */; };
+		2906CD14165B23B0000D43E4 /* zmq_msg_init_size.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB89165B23AF000D43E4 /* zmq_msg_init_size.html */; };
+		2906CD15165B23B0000D43E4 /* zmq_msg_init_size.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB8A165B23AF000D43E4 /* zmq_msg_init_size.txt */; };
+		2906CD16165B23B0000D43E4 /* zmq_msg_move.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB8B165B23AF000D43E4 /* zmq_msg_move.3 */; };
+		2906CD17165B23B0000D43E4 /* zmq_msg_move.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB8C165B23AF000D43E4 /* zmq_msg_move.html */; };
+		2906CD18165B23B0000D43E4 /* zmq_msg_move.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB8D165B23AF000D43E4 /* zmq_msg_move.txt */; };
+		2906CD19165B23B0000D43E4 /* zmq_msg_size.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB8E165B23AF000D43E4 /* zmq_msg_size.3 */; };
+		2906CD1A165B23B0000D43E4 /* zmq_msg_size.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB8F165B23AF000D43E4 /* zmq_msg_size.html */; };
+		2906CD1B165B23B0000D43E4 /* zmq_msg_size.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB90165B23AF000D43E4 /* zmq_msg_size.txt */; };
+		2906CD1C165B23B0000D43E4 /* zmq_pgm.7 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB91165B23AF000D43E4 /* zmq_pgm.7 */; };
+		2906CD1D165B23B0000D43E4 /* zmq_pgm.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB92165B23AF000D43E4 /* zmq_pgm.html */; };
+		2906CD1E165B23B0000D43E4 /* zmq_pgm.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB93165B23AF000D43E4 /* zmq_pgm.txt */; };
+		2906CD1F165B23B0000D43E4 /* zmq_poll.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB94165B23AF000D43E4 /* zmq_poll.3 */; };
+		2906CD20165B23B0000D43E4 /* zmq_poll.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB95165B23AF000D43E4 /* zmq_poll.html */; };
+		2906CD21165B23B0000D43E4 /* zmq_poll.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB96165B23AF000D43E4 /* zmq_poll.txt */; };
+		2906CD22165B23B0000D43E4 /* zmq_recv.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB97165B23AF000D43E4 /* zmq_recv.3 */; };
+		2906CD23165B23B0000D43E4 /* zmq_recv.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB98165B23AF000D43E4 /* zmq_recv.html */; };
+		2906CD24165B23B0000D43E4 /* zmq_recv.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB99165B23AF000D43E4 /* zmq_recv.txt */; };
+		2906CD25165B23B0000D43E4 /* zmq_send.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB9A165B23AF000D43E4 /* zmq_send.3 */; };
+		2906CD26165B23B0000D43E4 /* zmq_send.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB9B165B23AF000D43E4 /* zmq_send.html */; };
+		2906CD27165B23B0000D43E4 /* zmq_send.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB9C165B23AF000D43E4 /* zmq_send.txt */; };
+		2906CD28165B23B0000D43E4 /* zmq_setsockopt.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB9D165B23AF000D43E4 /* zmq_setsockopt.3 */; };
+		2906CD29165B23B0000D43E4 /* zmq_setsockopt.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB9E165B23AF000D43E4 /* zmq_setsockopt.html */; };
+		2906CD2A165B23B0000D43E4 /* zmq_setsockopt.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB9F165B23AF000D43E4 /* zmq_setsockopt.txt */; };
+		2906CD2B165B23B0000D43E4 /* zmq_socket.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA0165B23AF000D43E4 /* zmq_socket.3 */; };
+		2906CD2C165B23B0000D43E4 /* zmq_socket.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA1165B23AF000D43E4 /* zmq_socket.html */; };
+		2906CD2D165B23B0000D43E4 /* zmq_socket.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA2165B23AF000D43E4 /* zmq_socket.txt */; };
+		2906CD2E165B23B0000D43E4 /* zmq_strerror.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA3165B23AF000D43E4 /* zmq_strerror.3 */; };
+		2906CD2F165B23B0000D43E4 /* zmq_strerror.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA4165B23AF000D43E4 /* zmq_strerror.html */; };
+		2906CD30165B23B0000D43E4 /* zmq_strerror.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA5165B23AF000D43E4 /* zmq_strerror.txt */; };
+		2906CD31165B23B0000D43E4 /* zmq_tcp.7 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA6165B23AF000D43E4 /* zmq_tcp.7 */; };
+		2906CD32165B23B0000D43E4 /* zmq_tcp.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA7165B23AF000D43E4 /* zmq_tcp.html */; };
+		2906CD33165B23B0000D43E4 /* zmq_tcp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA8165B23AF000D43E4 /* zmq_tcp.txt */; };
+		2906CD34165B23B0000D43E4 /* zmq_term.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBA9165B23AF000D43E4 /* zmq_term.3 */; };
+		2906CD35165B23B0000D43E4 /* zmq_term.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBAA165B23AF000D43E4 /* zmq_term.html */; };
+		2906CD36165B23B0000D43E4 /* zmq_term.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBAB165B23AF000D43E4 /* zmq_term.txt */; };
+		2906CD37165B23B0000D43E4 /* zmq_version.3 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBAC165B23AF000D43E4 /* zmq_version.3 */; };
+		2906CD38165B23B0000D43E4 /* zmq_version.html in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBAD165B23AF000D43E4 /* zmq_version.html */; };
+		2906CD39165B23B0000D43E4 /* zmq_version.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBAE165B23AF000D43E4 /* zmq_version.txt */; };
+		2906CD3A165B23B0000D43E4 /* libpgm-5.1.118~dfsg.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBB1165B23AF000D43E4 /* libpgm-5.1.118~dfsg.tar.gz */; };
+		2906CD3E165B23B0000D43E4 /* xmlParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CBB6165B23AF000D43E4 /* xmlParser.cpp */; };
+		2906CD3F165B23B0000D43E4 /* xmlParser.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CBB7165B23AF000D43E4 /* xmlParser.hpp */; };
+		2906CD40165B23B0000D43E4 /* zmq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2906CBB9165B23AF000D43E4 /* zmq.h */; };
+		2906CD41165B23B0000D43E4 /* zmq.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CBBA165B23AF000D43E4 /* zmq.hpp */; };
+		2906CD42165B23B0000D43E4 /* zmq_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2906CBBB165B23AF000D43E4 /* zmq_utils.h */; };
+		2906CD43165B23B0000D43E4 /* INSTALL in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBBC165B23AF000D43E4 /* INSTALL */; };
+		2906CD44165B23B0000D43E4 /* libtool in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBBD165B23AF000D43E4 /* libtool */; };
+		2906CD45165B23B0000D43E4 /* MAINTAINERS in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBBE165B23AF000D43E4 /* MAINTAINERS */; };
+		2906CD49165B23B0000D43E4 /* NEWS in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBC2165B23AF000D43E4 /* NEWS */; };
+		2906CD4A165B23B0000D43E4 /* inproc_lat.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBC5165B23AF000D43E4 /* inproc_lat.Po */; };
+		2906CD4B165B23B0000D43E4 /* inproc_thr.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBC6165B23AF000D43E4 /* inproc_thr.Po */; };
+		2906CD4C165B23B0000D43E4 /* local_lat.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBC7165B23AF000D43E4 /* local_lat.Po */; };
+		2906CD4D165B23B0000D43E4 /* local_thr.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBC8165B23AF000D43E4 /* local_thr.Po */; };
+		2906CD4E165B23B0000D43E4 /* remote_lat.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBC9165B23AF000D43E4 /* remote_lat.Po */; };
+		2906CD4F165B23B0000D43E4 /* remote_thr.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBCA165B23AF000D43E4 /* remote_thr.Po */; };
+		2906CD59165B23B0000D43E4 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBD4165B23AF000D43E4 /* README */; };
+		2906CD5A165B23B0000D43E4 /* libzmq_la-clock.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBD7165B23AF000D43E4 /* libzmq_la-clock.Plo */; };
+		2906CD5B165B23B0000D43E4 /* libzmq_la-command.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBD8165B23AF000D43E4 /* libzmq_la-command.Plo */; };
+		2906CD5C165B23B0000D43E4 /* libzmq_la-connect_session.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBD9165B23AF000D43E4 /* libzmq_la-connect_session.Plo */; };
+		2906CD5D165B23B0000D43E4 /* libzmq_la-ctx.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBDA165B23AF000D43E4 /* libzmq_la-ctx.Plo */; };
+		2906CD5E165B23B0000D43E4 /* libzmq_la-decoder.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBDB165B23AF000D43E4 /* libzmq_la-decoder.Plo */; };
+		2906CD5F165B23B0000D43E4 /* libzmq_la-device.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBDC165B23AF000D43E4 /* libzmq_la-device.Plo */; };
+		2906CD60165B23B0000D43E4 /* libzmq_la-devpoll.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBDD165B23AF000D43E4 /* libzmq_la-devpoll.Plo */; };
+		2906CD61165B23B0000D43E4 /* libzmq_la-dist.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBDE165B23AF000D43E4 /* libzmq_la-dist.Plo */; };
+		2906CD62165B23B0000D43E4 /* libzmq_la-encoder.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBDF165B23AF000D43E4 /* libzmq_la-encoder.Plo */; };
+		2906CD63165B23B0000D43E4 /* libzmq_la-epoll.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE0165B23AF000D43E4 /* libzmq_la-epoll.Plo */; };
+		2906CD64165B23B0000D43E4 /* libzmq_la-err.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE1165B23AF000D43E4 /* libzmq_la-err.Plo */; };
+		2906CD65165B23B0000D43E4 /* libzmq_la-fq.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE2165B23AF000D43E4 /* libzmq_la-fq.Plo */; };
+		2906CD66165B23B0000D43E4 /* libzmq_la-io_object.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE3165B23AF000D43E4 /* libzmq_la-io_object.Plo */; };
+		2906CD67165B23B0000D43E4 /* libzmq_la-io_thread.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE4165B23AF000D43E4 /* libzmq_la-io_thread.Plo */; };
+		2906CD68165B23B0000D43E4 /* libzmq_la-ip.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE5165B23AF000D43E4 /* libzmq_la-ip.Plo */; };
+		2906CD69165B23B0000D43E4 /* libzmq_la-kqueue.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE6165B23AF000D43E4 /* libzmq_la-kqueue.Plo */; };
+		2906CD6A165B23B0000D43E4 /* libzmq_la-lb.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE7165B23AF000D43E4 /* libzmq_la-lb.Plo */; };
+		2906CD6B165B23B0000D43E4 /* libzmq_la-mailbox.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE8165B23AF000D43E4 /* libzmq_la-mailbox.Plo */; };
+		2906CD6C165B23B0000D43E4 /* libzmq_la-named_session.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBE9165B23AF000D43E4 /* libzmq_la-named_session.Plo */; };
+		2906CD6D165B23B0000D43E4 /* libzmq_la-object.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBEA165B23AF000D43E4 /* libzmq_la-object.Plo */; };
+		2906CD6E165B23B0000D43E4 /* libzmq_la-options.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBEB165B23AF000D43E4 /* libzmq_la-options.Plo */; };
+		2906CD6F165B23B0000D43E4 /* libzmq_la-own.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBEC165B23AF000D43E4 /* libzmq_la-own.Plo */; };
+		2906CD70165B23B0000D43E4 /* libzmq_la-pair.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBED165B23AF000D43E4 /* libzmq_la-pair.Plo */; };
+		2906CD71165B23B0000D43E4 /* libzmq_la-pgm_receiver.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBEE165B23AF000D43E4 /* libzmq_la-pgm_receiver.Plo */; };
+		2906CD72165B23B0000D43E4 /* libzmq_la-pgm_sender.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBEF165B23AF000D43E4 /* libzmq_la-pgm_sender.Plo */; };
+		2906CD73165B23B0000D43E4 /* libzmq_la-pgm_socket.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF0165B23AF000D43E4 /* libzmq_la-pgm_socket.Plo */; };
+		2906CD74165B23B0000D43E4 /* libzmq_la-pipe.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF1165B23AF000D43E4 /* libzmq_la-pipe.Plo */; };
+		2906CD75165B23B0000D43E4 /* libzmq_la-poll.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF2165B23AF000D43E4 /* libzmq_la-poll.Plo */; };
+		2906CD76165B23B0000D43E4 /* libzmq_la-poller_base.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF3165B23AF000D43E4 /* libzmq_la-poller_base.Plo */; };
+		2906CD77165B23B0000D43E4 /* libzmq_la-pub.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF4165B23AF000D43E4 /* libzmq_la-pub.Plo */; };
+		2906CD78165B23B0000D43E4 /* libzmq_la-pull.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF5165B23AF000D43E4 /* libzmq_la-pull.Plo */; };
+		2906CD79165B23B0000D43E4 /* libzmq_la-push.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF6165B23AF000D43E4 /* libzmq_la-push.Plo */; };
+		2906CD7A165B23B0000D43E4 /* libzmq_la-reaper.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF7165B23AF000D43E4 /* libzmq_la-reaper.Plo */; };
+		2906CD7B165B23B0000D43E4 /* libzmq_la-rep.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF8165B23AF000D43E4 /* libzmq_la-rep.Plo */; };
+		2906CD7C165B23B0000D43E4 /* libzmq_la-req.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBF9165B23AF000D43E4 /* libzmq_la-req.Plo */; };
+		2906CD7D165B23B0000D43E4 /* libzmq_la-select.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBFA165B23AF000D43E4 /* libzmq_la-select.Plo */; };
+		2906CD7E165B23B0000D43E4 /* libzmq_la-session.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBFB165B23AF000D43E4 /* libzmq_la-session.Plo */; };
+		2906CD7F165B23B0000D43E4 /* libzmq_la-signaler.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBFC165B23AF000D43E4 /* libzmq_la-signaler.Plo */; };
+		2906CD80165B23B0000D43E4 /* libzmq_la-socket_base.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBFD165B23AF000D43E4 /* libzmq_la-socket_base.Plo */; };
+		2906CD81165B23B0000D43E4 /* libzmq_la-sub.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBFE165B23AF000D43E4 /* libzmq_la-sub.Plo */; };
+		2906CD82165B23B0000D43E4 /* libzmq_la-swap.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CBFF165B23AF000D43E4 /* libzmq_la-swap.Plo */; };
+		2906CD83165B23B0000D43E4 /* libzmq_la-tcp_connecter.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC00165B23AF000D43E4 /* libzmq_la-tcp_connecter.Plo */; };
+		2906CD84165B23B0000D43E4 /* libzmq_la-tcp_listener.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC01165B23AF000D43E4 /* libzmq_la-tcp_listener.Plo */; };
+		2906CD85165B23B0000D43E4 /* libzmq_la-tcp_socket.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC02165B23AF000D43E4 /* libzmq_la-tcp_socket.Plo */; };
+		2906CD86165B23B0000D43E4 /* libzmq_la-thread.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC03165B23AF000D43E4 /* libzmq_la-thread.Plo */; };
+		2906CD87165B23B0000D43E4 /* libzmq_la-transient_session.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC04165B23AF000D43E4 /* libzmq_la-transient_session.Plo */; };
+		2906CD88165B23B0000D43E4 /* libzmq_la-trie.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC05165B23AF000D43E4 /* libzmq_la-trie.Plo */; };
+		2906CD89165B23B0000D43E4 /* libzmq_la-uuid.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC06165B23AF000D43E4 /* libzmq_la-uuid.Plo */; };
+		2906CD8A165B23B0000D43E4 /* libzmq_la-xpub.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC07165B23AF000D43E4 /* libzmq_la-xpub.Plo */; };
+		2906CD8B165B23B0000D43E4 /* libzmq_la-xrep.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC08165B23AF000D43E4 /* libzmq_la-xrep.Plo */; };
+		2906CD8C165B23B0000D43E4 /* libzmq_la-xreq.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC09165B23AF000D43E4 /* libzmq_la-xreq.Plo */; };
+		2906CD8D165B23B0000D43E4 /* libzmq_la-xsub.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC0A165B23AF000D43E4 /* libzmq_la-xsub.Plo */; };
+		2906CD8E165B23B0000D43E4 /* libzmq_la-zmq.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC0B165B23AF000D43E4 /* libzmq_la-zmq.Plo */; };
+		2906CD8F165B23B0000D43E4 /* libzmq_la-zmq_connecter.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC0C165B23AF000D43E4 /* libzmq_la-zmq_connecter.Plo */; };
+		2906CD90165B23B0000D43E4 /* libzmq_la-zmq_engine.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC0D165B23AF000D43E4 /* libzmq_la-zmq_engine.Plo */; };
+		2906CD91165B23B0000D43E4 /* libzmq_la-zmq_init.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC0E165B23AF000D43E4 /* libzmq_la-zmq_init.Plo */; };
+		2906CD92165B23B0000D43E4 /* libzmq_la-zmq_listener.Plo in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC0F165B23AF000D43E4 /* libzmq_la-zmq_listener.Plo */; };
+		2906CD93165B23B0000D43E4 /* array.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC10165B23AF000D43E4 /* array.hpp */; };
+		2906CD94165B23B0000D43E4 /* atomic_counter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC11165B23AF000D43E4 /* atomic_counter.hpp */; };
+		2906CD95165B23B0000D43E4 /* atomic_ptr.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC12165B23AF000D43E4 /* atomic_ptr.hpp */; };
+		2906CD96165B23B0000D43E4 /* blob.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC13165B23AF000D43E4 /* blob.hpp */; };
+		2906CD97165B23B0000D43E4 /* clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC14165B23AF000D43E4 /* clock.cpp */; };
+		2906CD98165B23B0000D43E4 /* clock.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC15165B23AF000D43E4 /* clock.hpp */; };
+		2906CD99165B23B0000D43E4 /* command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC16165B23AF000D43E4 /* command.cpp */; };
+		2906CD9A165B23B0000D43E4 /* command.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC17165B23AF000D43E4 /* command.hpp */; };
+		2906CD9B165B23B0000D43E4 /* config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC18165B23AF000D43E4 /* config.hpp */; };
+		2906CD9C165B23B0000D43E4 /* connect_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC19165B23AF000D43E4 /* connect_session.cpp */; };
+		2906CD9D165B23B0000D43E4 /* connect_session.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC1A165B23AF000D43E4 /* connect_session.hpp */; };
+		2906CD9E165B23B0000D43E4 /* ctx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC1B165B23AF000D43E4 /* ctx.cpp */; };
+		2906CD9F165B23B0000D43E4 /* ctx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC1C165B23AF000D43E4 /* ctx.hpp */; };
+		2906CDA0165B23B0000D43E4 /* decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC1D165B23AF000D43E4 /* decoder.cpp */; };
+		2906CDA1165B23B0000D43E4 /* decoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC1E165B23AF000D43E4 /* decoder.hpp */; };
+		2906CDA2165B23B0000D43E4 /* device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC1F165B23AF000D43E4 /* device.cpp */; };
+		2906CDA3165B23B0000D43E4 /* device.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC20165B23AF000D43E4 /* device.hpp */; };
+		2906CDA4165B23B0000D43E4 /* devpoll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC21165B23AF000D43E4 /* devpoll.cpp */; };
+		2906CDA5165B23B0000D43E4 /* devpoll.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC22165B23AF000D43E4 /* devpoll.hpp */; };
+		2906CDA6165B23B0000D43E4 /* dist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC23165B23AF000D43E4 /* dist.cpp */; };
+		2906CDA7165B23B0000D43E4 /* dist.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC24165B23AF000D43E4 /* dist.hpp */; };
+		2906CDA8165B23B0000D43E4 /* encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC25165B23AF000D43E4 /* encoder.cpp */; };
+		2906CDA9165B23B0000D43E4 /* encoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC26165B23AF000D43E4 /* encoder.hpp */; };
+		2906CDAA165B23B0000D43E4 /* epoll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC27165B23AF000D43E4 /* epoll.cpp */; };
+		2906CDAB165B23B0000D43E4 /* epoll.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC28165B23AF000D43E4 /* epoll.hpp */; };
+		2906CDAC165B23B0000D43E4 /* err.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC29165B23AF000D43E4 /* err.cpp */; };
+		2906CDAD165B23B0000D43E4 /* err.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC2A165B23AF000D43E4 /* err.hpp */; };
+		2906CDAE165B23B0000D43E4 /* fd.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC2B165B23AF000D43E4 /* fd.hpp */; };
+		2906CDAF165B23B0000D43E4 /* fq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC2C165B23AF000D43E4 /* fq.cpp */; };
+		2906CDB0165B23B0000D43E4 /* fq.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC2D165B23AF000D43E4 /* fq.hpp */; };
+		2906CDB1165B23B0000D43E4 /* gcc_421_char_traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC2E165B23AF000D43E4 /* gcc_421_char_traits.hpp */; };
+		2906CDB2165B23B0000D43E4 /* i_engine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC2F165B23AF000D43E4 /* i_engine.hpp */; };
+		2906CDB3165B23B0000D43E4 /* i_inout.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC30165B23AF000D43E4 /* i_inout.hpp */; };
+		2906CDB4165B23B0000D43E4 /* i_poll_events.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC31165B23AF000D43E4 /* i_poll_events.hpp */; };
+		2906CDB5165B23B0000D43E4 /* io_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC32165B23AF000D43E4 /* io_object.cpp */; };
+		2906CDB6165B23B0000D43E4 /* io_object.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC33165B23AF000D43E4 /* io_object.hpp */; };
+		2906CDB7165B23B0000D43E4 /* io_thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC34165B23AF000D43E4 /* io_thread.cpp */; };
+		2906CDB8165B23B0000D43E4 /* io_thread.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC35165B23AF000D43E4 /* io_thread.hpp */; };
+		2906CDB9165B23B0000D43E4 /* ip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC36165B23AF000D43E4 /* ip.cpp */; };
+		2906CDBA165B23B0000D43E4 /* ip.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC37165B23AF000D43E4 /* ip.hpp */; };
+		2906CDBB165B23B0000D43E4 /* kqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC38165B23AF000D43E4 /* kqueue.cpp */; };
+		2906CDBC165B23B0000D43E4 /* kqueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC39165B23AF000D43E4 /* kqueue.hpp */; };
+		2906CDBD165B23B0000D43E4 /* lb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC3A165B23AF000D43E4 /* lb.cpp */; };
+		2906CDBE165B23B0000D43E4 /* lb.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC3B165B23AF000D43E4 /* lb.hpp */; };
+		2906CDBF165B23B0000D43E4 /* libzmq.pc in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC3C165B23AF000D43E4 /* libzmq.pc */; };
+		2906CDC0165B23B0000D43E4 /* libzmq.pc.in in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC3D165B23AF000D43E4 /* libzmq.pc.in */; };
+		2906CDC1165B23B0000D43E4 /* likely.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC3E165B23AF000D43E4 /* likely.hpp */; };
+		2906CDC2165B23B0000D43E4 /* mailbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC3F165B23AF000D43E4 /* mailbox.cpp */; };
+		2906CDC3165B23B0000D43E4 /* mailbox.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC40165B23AF000D43E4 /* mailbox.hpp */; };
+		2906CDC7165B23B0000D43E4 /* msg_content.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC44165B23AF000D43E4 /* msg_content.hpp */; };
+		2906CDC8165B23B0000D43E4 /* mutex.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC45165B23AF000D43E4 /* mutex.hpp */; };
+		2906CDC9165B23B0000D43E4 /* named_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC46165B23AF000D43E4 /* named_session.cpp */; };
+		2906CDCA165B23B0000D43E4 /* named_session.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC47165B23AF000D43E4 /* named_session.hpp */; };
+		2906CDCB165B23B0000D43E4 /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC48165B23AF000D43E4 /* object.cpp */; };
+		2906CDCC165B23B0000D43E4 /* object.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC49165B23AF000D43E4 /* object.hpp */; };
+		2906CDCD165B23B0000D43E4 /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC4A165B23AF000D43E4 /* options.cpp */; };
+		2906CDCE165B23B0000D43E4 /* options.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC4B165B23AF000D43E4 /* options.hpp */; };
+		2906CDCF165B23B0000D43E4 /* own.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC4C165B23AF000D43E4 /* own.cpp */; };
+		2906CDD0165B23B0000D43E4 /* own.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC4D165B23AF000D43E4 /* own.hpp */; };
+		2906CDD1165B23B0000D43E4 /* pair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC4E165B23AF000D43E4 /* pair.cpp */; };
+		2906CDD2165B23B0000D43E4 /* pair.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC4F165B23AF000D43E4 /* pair.hpp */; };
+		2906CDD3165B23B0000D43E4 /* pgm_receiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC50165B23AF000D43E4 /* pgm_receiver.cpp */; };
+		2906CDD4165B23B0000D43E4 /* pgm_receiver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC51165B23AF000D43E4 /* pgm_receiver.hpp */; };
+		2906CDD5165B23B0000D43E4 /* pgm_sender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC52165B23AF000D43E4 /* pgm_sender.cpp */; };
+		2906CDD6165B23B0000D43E4 /* pgm_sender.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC53165B23AF000D43E4 /* pgm_sender.hpp */; };
+		2906CDD7165B23B0000D43E4 /* pgm_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC54165B23AF000D43E4 /* pgm_socket.cpp */; };
+		2906CDD8165B23B0000D43E4 /* pgm_socket.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC55165B23AF000D43E4 /* pgm_socket.hpp */; };
+		2906CDD9165B23B0000D43E4 /* pipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC56165B23AF000D43E4 /* pipe.cpp */; };
+		2906CDDA165B23B0000D43E4 /* pipe.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC57165B23AF000D43E4 /* pipe.hpp */; };
+		2906CDDB165B23B0000D43E4 /* platform.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC58165B23AF000D43E4 /* platform.hpp */; };
+		2906CDDD165B23B0000D43E4 /* poll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC5A165B23AF000D43E4 /* poll.cpp */; };
+		2906CDDE165B23B0000D43E4 /* poll.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC5B165B23AF000D43E4 /* poll.hpp */; };
+		2906CDDF165B23B0000D43E4 /* poller.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC5C165B23AF000D43E4 /* poller.hpp */; };
+		2906CDE0165B23B0000D43E4 /* poller_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC5D165B23AF000D43E4 /* poller_base.cpp */; };
+		2906CDE1165B23B0000D43E4 /* poller_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC5E165B23AF000D43E4 /* poller_base.hpp */; };
+		2906CDE2165B23B0000D43E4 /* pub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC5F165B23AF000D43E4 /* pub.cpp */; };
+		2906CDE3165B23B0000D43E4 /* pub.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC60165B23AF000D43E4 /* pub.hpp */; };
+		2906CDE4165B23B0000D43E4 /* pull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC61165B23AF000D43E4 /* pull.cpp */; };
+		2906CDE5165B23B0000D43E4 /* pull.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC62165B23AF000D43E4 /* pull.hpp */; };
+		2906CDE6165B23B0000D43E4 /* push.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC63165B23AF000D43E4 /* push.cpp */; };
+		2906CDE7165B23B0000D43E4 /* push.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC64165B23AF000D43E4 /* push.hpp */; };
+		2906CDE8165B23B0000D43E4 /* reaper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC65165B23AF000D43E4 /* reaper.cpp */; };
+		2906CDE9165B23B0000D43E4 /* reaper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC66165B23AF000D43E4 /* reaper.hpp */; };
+		2906CDEA165B23B0000D43E4 /* rep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC67165B23AF000D43E4 /* rep.cpp */; };
+		2906CDEB165B23B0000D43E4 /* rep.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC68165B23AF000D43E4 /* rep.hpp */; };
+		2906CDEC165B23B0000D43E4 /* req.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC69165B23AF000D43E4 /* req.cpp */; };
+		2906CDED165B23B0000D43E4 /* req.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC6A165B23AF000D43E4 /* req.hpp */; };
+		2906CDEE165B23B0000D43E4 /* select.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC6B165B23AF000D43E4 /* select.cpp */; };
+		2906CDEF165B23B0000D43E4 /* select.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC6C165B23AF000D43E4 /* select.hpp */; };
+		2906CDF0165B23B0000D43E4 /* semaphore.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC6D165B23AF000D43E4 /* semaphore.hpp */; };
+		2906CDF1165B23B0000D43E4 /* session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC6E165B23AF000D43E4 /* session.cpp */; };
+		2906CDF2165B23B0000D43E4 /* session.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC6F165B23AF000D43E4 /* session.hpp */; };
+		2906CDF3165B23B0000D43E4 /* signaler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC70165B23AF000D43E4 /* signaler.cpp */; };
+		2906CDF4165B23B0000D43E4 /* signaler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC71165B23AF000D43E4 /* signaler.hpp */; };
+		2906CDF5165B23B0000D43E4 /* socket_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC72165B23AF000D43E4 /* socket_base.cpp */; };
+		2906CDF6165B23B0000D43E4 /* socket_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC73165B23AF000D43E4 /* socket_base.hpp */; };
+		2906CDF7165B23B0000D43E4 /* stamp-h1 in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC74165B23AF000D43E4 /* stamp-h1 */; };
+		2906CDF8165B23B0000D43E4 /* stdint.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC75165B23AF000D43E4 /* stdint.hpp */; };
+		2906CDF9165B23B0000D43E4 /* sub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC76165B23AF000D43E4 /* sub.cpp */; };
+		2906CDFA165B23B0000D43E4 /* sub.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC77165B23AF000D43E4 /* sub.hpp */; };
+		2906CDFB165B23B0000D43E4 /* swap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC78165B23AF000D43E4 /* swap.cpp */; };
+		2906CDFC165B23B0000D43E4 /* swap.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC79165B23AF000D43E4 /* swap.hpp */; };
+		2906CDFD165B23B0000D43E4 /* tcp_connecter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC7A165B23AF000D43E4 /* tcp_connecter.cpp */; };
+		2906CDFE165B23B0000D43E4 /* tcp_connecter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC7B165B23AF000D43E4 /* tcp_connecter.hpp */; };
+		2906CDFF165B23B0000D43E4 /* tcp_listener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC7C165B23AF000D43E4 /* tcp_listener.cpp */; };
+		2906CE00165B23B0000D43E4 /* tcp_listener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC7D165B23AF000D43E4 /* tcp_listener.hpp */; };
+		2906CE01165B23B0000D43E4 /* tcp_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC7E165B23AF000D43E4 /* tcp_socket.cpp */; };
+		2906CE02165B23B0000D43E4 /* tcp_socket.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC7F165B23AF000D43E4 /* tcp_socket.hpp */; };
+		2906CE03165B23B0000D43E4 /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC80165B23AF000D43E4 /* thread.cpp */; };
+		2906CE04165B23B0000D43E4 /* thread.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC81165B23AF000D43E4 /* thread.hpp */; };
+		2906CE05165B23B0000D43E4 /* transient_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC82165B23AF000D43E4 /* transient_session.cpp */; };
+		2906CE06165B23B0000D43E4 /* transient_session.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC83165B23AF000D43E4 /* transient_session.hpp */; };
+		2906CE07165B23B0000D43E4 /* trie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC84165B23AF000D43E4 /* trie.cpp */; };
+		2906CE08165B23B0000D43E4 /* trie.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC85165B23AF000D43E4 /* trie.hpp */; };
+		2906CE09165B23B0000D43E4 /* uuid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC86165B23AF000D43E4 /* uuid.cpp */; };
+		2906CE0A165B23B0000D43E4 /* uuid.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC87165B23AF000D43E4 /* uuid.hpp */; };
+		2906CE0B165B23B0000D43E4 /* windows.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC88165B23AF000D43E4 /* windows.hpp */; };
+		2906CE0C165B23B0000D43E4 /* wire.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC89165B23AF000D43E4 /* wire.hpp */; };
+		2906CE0D165B23B0000D43E4 /* xpub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC8A165B23AF000D43E4 /* xpub.cpp */; };
+		2906CE0E165B23B0000D43E4 /* xpub.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC8B165B23AF000D43E4 /* xpub.hpp */; };
+		2906CE0F165B23B0000D43E4 /* xrep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC8C165B23AF000D43E4 /* xrep.cpp */; };
+		2906CE10165B23B0000D43E4 /* xrep.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC8D165B23AF000D43E4 /* xrep.hpp */; };
+		2906CE11165B23B0000D43E4 /* xreq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC8E165B23AF000D43E4 /* xreq.cpp */; };
+		2906CE12165B23B0000D43E4 /* xreq.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC8F165B23AF000D43E4 /* xreq.hpp */; };
+		2906CE13165B23B0000D43E4 /* xsub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC90165B23AF000D43E4 /* xsub.cpp */; };
+		2906CE14165B23B0000D43E4 /* xsub.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC91165B23AF000D43E4 /* xsub.hpp */; };
+		2906CE15165B23B0000D43E4 /* ypipe.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC92165B23AF000D43E4 /* ypipe.hpp */; };
+		2906CE16165B23B0000D43E4 /* yqueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC93165B23AF000D43E4 /* yqueue.hpp */; };
+		2906CE17165B23B0000D43E4 /* zmq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC94165B23AF000D43E4 /* zmq.cpp */; };
+		2906CE18165B23B0000D43E4 /* zmq_connecter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC95165B23AF000D43E4 /* zmq_connecter.cpp */; };
+		2906CE19165B23B0000D43E4 /* zmq_connecter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC96165B23AF000D43E4 /* zmq_connecter.hpp */; };
+		2906CE1A165B23B0000D43E4 /* zmq_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC97165B23AF000D43E4 /* zmq_engine.cpp */; };
+		2906CE1B165B23B0000D43E4 /* zmq_engine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC98165B23AF000D43E4 /* zmq_engine.hpp */; };
+		2906CE1C165B23B0000D43E4 /* zmq_init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC99165B23AF000D43E4 /* zmq_init.cpp */; };
+		2906CE1D165B23B0000D43E4 /* zmq_init.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC9A165B23AF000D43E4 /* zmq_init.hpp */; };
+		2906CE1E165B23B0000D43E4 /* zmq_listener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2906CC9B165B23AF000D43E4 /* zmq_listener.cpp */; };
+		2906CE1F165B23B0000D43E4 /* zmq_listener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CC9C165B23AF000D43E4 /* zmq_listener.hpp */; };
+		2906CE20165B23B0000D43E4 /* test_hwm.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CC9F165B23AF000D43E4 /* test_hwm.Po */; };
+		2906CE21165B23B0000D43E4 /* test_pair_inproc.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CCA0165B23AF000D43E4 /* test_pair_inproc.Po */; };
+		2906CE22165B23B0000D43E4 /* test_pair_ipc.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CCA1165B23AF000D43E4 /* test_pair_ipc.Po */; };
+		2906CE23165B23B0000D43E4 /* test_pair_tcp.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CCA2165B23AF000D43E4 /* test_pair_tcp.Po */; };
+		2906CE24165B23B0000D43E4 /* test_reqrep_inproc.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CCA3165B23AF000D43E4 /* test_reqrep_inproc.Po */; };
+		2906CE25165B23B0000D43E4 /* test_reqrep_ipc.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CCA4165B23AF000D43E4 /* test_reqrep_ipc.Po */; };
+		2906CE26165B23B0000D43E4 /* test_reqrep_tcp.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CCA5165B23AF000D43E4 /* test_reqrep_tcp.Po */; };
+		2906CE27165B23B0000D43E4 /* test_shutdown_stress.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CCA6165B23AF000D43E4 /* test_shutdown_stress.Po */; };
+		2906CE28165B23B0000D43E4 /* test_timeo.Po in Resources */ = {isa = PBXBuildFile; fileRef = 2906CCA7165B23AF000D43E4 /* test_timeo.Po */; };
+		2906CE35165B23B0000D43E4 /* testutil.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2906CCB4165B23AF000D43E4 /* testutil.hpp */; };
+		2906CE36165B23B0000D43E4 /* version.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2906CCB5165B23AF000D43E4 /* version.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,11 +360,399 @@
 		2906C7DC165B1F7E000D43E4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2906C7DD165B1F7E000D43E4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2906C7DE165B1F7E000D43E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2906C7E1165B1F7E000D43E4 /* objc-zmq-frame-Info.plist */ = {isa = PBXFileReference; path = "objc-zmq-frame-Info.plist"; sourceTree = "<group>"; };
+		2906C7E1165B1F7E000D43E4 /* objc-zmq-frame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "objc-zmq-frame-Info.plist"; sourceTree = "<group>"; };
 		2906C7E3165B1F7E000D43E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2906C7E5165B1F7E000D43E4 /* objc-zmq-frame-Prefix.pch */ = {isa = PBXFileReference; path = "objc-zmq-frame-Prefix.pch"; sourceTree = "<group>"; };
-		2906C7E6165B1F7E000D43E4 /* objc_zmq_frame.h */ = {isa = PBXFileReference; path = objc_zmq_frame.h; sourceTree = "<group>"; };
-		2906C7E7165B1F7E000D43E4 /* objc_zmq_frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_zmq_frame.m; sourceTree = "<group>"; };
+		2906C7E5165B1F7E000D43E4 /* objc-zmq-frame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-zmq-frame-Prefix.pch"; sourceTree = "<group>"; };
+		2906C7F8165B2001000D43E4 /* ZMQContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQContext.h; sourceTree = "<group>"; };
+		2906C7F9165B2001000D43E4 /* ZMQContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMQContext.m; sourceTree = "<group>"; };
+		2906C7FA165B2001000D43E4 /* ZMQObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQObjC.h; sourceTree = "<group>"; };
+		2906C7FB165B2001000D43E4 /* ZMQSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMQSocket.h; sourceTree = "<group>"; };
+		2906C7FC165B2001000D43E4 /* ZMQSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMQSocket.m; sourceTree = "<group>"; };
+		2906CB20165B23AF000D43E4 /* acinclude.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acinclude.m4; sourceTree = "<group>"; };
+		2906CB21165B23AF000D43E4 /* aclocal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		2906CB22165B23AF000D43E4 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		2906CB23165B23AF000D43E4 /* autogen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
+		2906CB27165B23AF000D43E4 /* c_local_lat.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = c_local_lat.vcproj; sourceTree = "<group>"; };
+		2906CB29165B23AF000D43E4 /* c_local_thr.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = c_local_thr.vcproj; sourceTree = "<group>"; };
+		2906CB2B165B23AF000D43E4 /* c_remote_lat.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = c_remote_lat.vcproj; sourceTree = "<group>"; };
+		2906CB2D165B23AF000D43E4 /* c_remote_thr.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = c_remote_thr.vcproj; sourceTree = "<group>"; };
+		2906CB2F165B23AF000D43E4 /* inproc_lat.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = inproc_lat.vcproj; sourceTree = "<group>"; };
+		2906CB31165B23AF000D43E4 /* inproc_thr.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = inproc_thr.vcproj; sourceTree = "<group>"; };
+		2906CB33165B23AF000D43E4 /* libzmq.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = libzmq.vcproj; sourceTree = "<group>"; };
+		2906CB34165B23AF000D43E4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2906CB35165B23AF000D43E4 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		2906CB36165B23AF000D43E4 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		2906CB37165B23AF000D43E4 /* msvc.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = msvc.sln; sourceTree = "<group>"; };
+		2906CB38165B23AF000D43E4 /* platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = platform.hpp; sourceTree = "<group>"; };
+		2906CB3A165B23AF000D43E4 /* zeromq.spec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zeromq.spec; sourceTree = "<group>"; };
+		2906CB3B165B23AF000D43E4 /* zeromq.spec.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zeromq.spec.in; sourceTree = "<group>"; };
+		2906CB3C165B23AF000D43E4 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		2906CB3E165B23AF000D43E4 /* compile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = compile; sourceTree = "<group>"; };
+		2906CB3F165B23AF000D43E4 /* config.guess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
+		2906CB40165B23AF000D43E4 /* config.sub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
+		2906CB41165B23AF000D43E4 /* depcomp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		2906CB42165B23AF000D43E4 /* install-sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		2906CB43165B23AF000D43E4 /* libtool.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libtool.m4; sourceTree = "<group>"; };
+		2906CB44165B23AF000D43E4 /* ltmain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ltmain.sh; sourceTree = "<group>"; };
+		2906CB45165B23AF000D43E4 /* ltoptions.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ltoptions.m4; sourceTree = "<group>"; };
+		2906CB46165B23AF000D43E4 /* ltsugar.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ltsugar.m4; sourceTree = "<group>"; };
+		2906CB47165B23AF000D43E4 /* ltversion.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ltversion.m4; sourceTree = "<group>"; };
+		2906CB48165B23AF000D43E4 /* lt~obsolete.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lt~obsolete.m4"; sourceTree = "<group>"; };
+		2906CB49165B23AF000D43E4 /* missing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		2906CB4A165B23AF000D43E4 /* config.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.log; sourceTree = "<group>"; };
+		2906CB4B165B23AF000D43E4 /* config.status */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.status; sourceTree = "<group>"; };
+		2906CB4C165B23AF000D43E4 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		2906CB4D165B23AF000D43E4 /* configure.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.in; sourceTree = "<group>"; };
+		2906CB4E165B23AF000D43E4 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		2906CB4F165B23AF000D43E4 /* COPYING.LESSER */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING.LESSER; sourceTree = "<group>"; };
+		2906CB51165B23AF000D43E4 /* asciidoc.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = asciidoc.conf; sourceTree = "<group>"; };
+		2906CB52165B23AF000D43E4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2906CB53165B23AF000D43E4 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		2906CB54165B23AF000D43E4 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		2906CB55165B23AF000D43E4 /* zmq.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq.7; sourceTree = "<group>"; };
+		2906CB56165B23AF000D43E4 /* zmq.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq.html; sourceTree = "<group>"; };
+		2906CB57165B23AF000D43E4 /* zmq.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq.txt; sourceTree = "<group>"; };
+		2906CB58165B23AF000D43E4 /* zmq_bind.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_bind.3; sourceTree = "<group>"; };
+		2906CB59165B23AF000D43E4 /* zmq_bind.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_bind.html; sourceTree = "<group>"; };
+		2906CB5A165B23AF000D43E4 /* zmq_bind.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_bind.txt; sourceTree = "<group>"; };
+		2906CB5B165B23AF000D43E4 /* zmq_close.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_close.3; sourceTree = "<group>"; };
+		2906CB5C165B23AF000D43E4 /* zmq_close.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_close.html; sourceTree = "<group>"; };
+		2906CB5D165B23AF000D43E4 /* zmq_close.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_close.txt; sourceTree = "<group>"; };
+		2906CB5E165B23AF000D43E4 /* zmq_connect.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_connect.3; sourceTree = "<group>"; };
+		2906CB5F165B23AF000D43E4 /* zmq_connect.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_connect.html; sourceTree = "<group>"; };
+		2906CB60165B23AF000D43E4 /* zmq_connect.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_connect.txt; sourceTree = "<group>"; };
+		2906CB61165B23AF000D43E4 /* zmq_cpp.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_cpp.7; sourceTree = "<group>"; };
+		2906CB62165B23AF000D43E4 /* zmq_cpp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_cpp.html; sourceTree = "<group>"; };
+		2906CB63165B23AF000D43E4 /* zmq_cpp.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_cpp.txt; sourceTree = "<group>"; };
+		2906CB64165B23AF000D43E4 /* zmq_device.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_device.3; sourceTree = "<group>"; };
+		2906CB65165B23AF000D43E4 /* zmq_device.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_device.html; sourceTree = "<group>"; };
+		2906CB66165B23AF000D43E4 /* zmq_device.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_device.txt; sourceTree = "<group>"; };
+		2906CB67165B23AF000D43E4 /* zmq_epgm.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_epgm.7; sourceTree = "<group>"; };
+		2906CB68165B23AF000D43E4 /* zmq_epgm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_epgm.html; sourceTree = "<group>"; };
+		2906CB69165B23AF000D43E4 /* zmq_epgm.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_epgm.txt; sourceTree = "<group>"; };
+		2906CB6A165B23AF000D43E4 /* zmq_errno.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_errno.3; sourceTree = "<group>"; };
+		2906CB6B165B23AF000D43E4 /* zmq_errno.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_errno.html; sourceTree = "<group>"; };
+		2906CB6C165B23AF000D43E4 /* zmq_errno.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_errno.txt; sourceTree = "<group>"; };
+		2906CB6D165B23AF000D43E4 /* zmq_getsockopt.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_getsockopt.3; sourceTree = "<group>"; };
+		2906CB6E165B23AF000D43E4 /* zmq_getsockopt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_getsockopt.html; sourceTree = "<group>"; };
+		2906CB6F165B23AF000D43E4 /* zmq_getsockopt.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_getsockopt.txt; sourceTree = "<group>"; };
+		2906CB70165B23AF000D43E4 /* zmq_init.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_init.3; sourceTree = "<group>"; };
+		2906CB71165B23AF000D43E4 /* zmq_init.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_init.html; sourceTree = "<group>"; };
+		2906CB72165B23AF000D43E4 /* zmq_init.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_init.txt; sourceTree = "<group>"; };
+		2906CB73165B23AF000D43E4 /* zmq_inproc.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_inproc.7; sourceTree = "<group>"; };
+		2906CB74165B23AF000D43E4 /* zmq_inproc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_inproc.html; sourceTree = "<group>"; };
+		2906CB75165B23AF000D43E4 /* zmq_inproc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_inproc.txt; sourceTree = "<group>"; };
+		2906CB76165B23AF000D43E4 /* zmq_ipc.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_ipc.7; sourceTree = "<group>"; };
+		2906CB77165B23AF000D43E4 /* zmq_ipc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_ipc.html; sourceTree = "<group>"; };
+		2906CB78165B23AF000D43E4 /* zmq_ipc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_ipc.txt; sourceTree = "<group>"; };
+		2906CB79165B23AF000D43E4 /* zmq_msg_close.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_close.3; sourceTree = "<group>"; };
+		2906CB7A165B23AF000D43E4 /* zmq_msg_close.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_msg_close.html; sourceTree = "<group>"; };
+		2906CB7B165B23AF000D43E4 /* zmq_msg_close.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_close.txt; sourceTree = "<group>"; };
+		2906CB7C165B23AF000D43E4 /* zmq_msg_copy.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_copy.3; sourceTree = "<group>"; };
+		2906CB7D165B23AF000D43E4 /* zmq_msg_copy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_msg_copy.html; sourceTree = "<group>"; };
+		2906CB7E165B23AF000D43E4 /* zmq_msg_copy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_copy.txt; sourceTree = "<group>"; };
+		2906CB7F165B23AF000D43E4 /* zmq_msg_data.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_data.3; sourceTree = "<group>"; };
+		2906CB80165B23AF000D43E4 /* zmq_msg_data.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_msg_data.html; sourceTree = "<group>"; };
+		2906CB81165B23AF000D43E4 /* zmq_msg_data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_data.txt; sourceTree = "<group>"; };
+		2906CB82165B23AF000D43E4 /* zmq_msg_init.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_init.3; sourceTree = "<group>"; };
+		2906CB83165B23AF000D43E4 /* zmq_msg_init.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_msg_init.html; sourceTree = "<group>"; };
+		2906CB84165B23AF000D43E4 /* zmq_msg_init.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_init.txt; sourceTree = "<group>"; };
+		2906CB85165B23AF000D43E4 /* zmq_msg_init_data.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_init_data.3; sourceTree = "<group>"; };
+		2906CB86165B23AF000D43E4 /* zmq_msg_init_data.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_msg_init_data.html; sourceTree = "<group>"; };
+		2906CB87165B23AF000D43E4 /* zmq_msg_init_data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_init_data.txt; sourceTree = "<group>"; };
+		2906CB88165B23AF000D43E4 /* zmq_msg_init_size.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_init_size.3; sourceTree = "<group>"; };
+		2906CB89165B23AF000D43E4 /* zmq_msg_init_size.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_msg_init_size.html; sourceTree = "<group>"; };
+		2906CB8A165B23AF000D43E4 /* zmq_msg_init_size.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_init_size.txt; sourceTree = "<group>"; };
+		2906CB8B165B23AF000D43E4 /* zmq_msg_move.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_move.3; sourceTree = "<group>"; };
+		2906CB8C165B23AF000D43E4 /* zmq_msg_move.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_msg_move.html; sourceTree = "<group>"; };
+		2906CB8D165B23AF000D43E4 /* zmq_msg_move.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_move.txt; sourceTree = "<group>"; };
+		2906CB8E165B23AF000D43E4 /* zmq_msg_size.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_size.3; sourceTree = "<group>"; };
+		2906CB8F165B23AF000D43E4 /* zmq_msg_size.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_msg_size.html; sourceTree = "<group>"; };
+		2906CB90165B23AF000D43E4 /* zmq_msg_size.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_msg_size.txt; sourceTree = "<group>"; };
+		2906CB91165B23AF000D43E4 /* zmq_pgm.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_pgm.7; sourceTree = "<group>"; };
+		2906CB92165B23AF000D43E4 /* zmq_pgm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_pgm.html; sourceTree = "<group>"; };
+		2906CB93165B23AF000D43E4 /* zmq_pgm.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_pgm.txt; sourceTree = "<group>"; };
+		2906CB94165B23AF000D43E4 /* zmq_poll.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_poll.3; sourceTree = "<group>"; };
+		2906CB95165B23AF000D43E4 /* zmq_poll.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_poll.html; sourceTree = "<group>"; };
+		2906CB96165B23AF000D43E4 /* zmq_poll.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_poll.txt; sourceTree = "<group>"; };
+		2906CB97165B23AF000D43E4 /* zmq_recv.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_recv.3; sourceTree = "<group>"; };
+		2906CB98165B23AF000D43E4 /* zmq_recv.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_recv.html; sourceTree = "<group>"; };
+		2906CB99165B23AF000D43E4 /* zmq_recv.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_recv.txt; sourceTree = "<group>"; };
+		2906CB9A165B23AF000D43E4 /* zmq_send.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_send.3; sourceTree = "<group>"; };
+		2906CB9B165B23AF000D43E4 /* zmq_send.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_send.html; sourceTree = "<group>"; };
+		2906CB9C165B23AF000D43E4 /* zmq_send.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_send.txt; sourceTree = "<group>"; };
+		2906CB9D165B23AF000D43E4 /* zmq_setsockopt.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_setsockopt.3; sourceTree = "<group>"; };
+		2906CB9E165B23AF000D43E4 /* zmq_setsockopt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_setsockopt.html; sourceTree = "<group>"; };
+		2906CB9F165B23AF000D43E4 /* zmq_setsockopt.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_setsockopt.txt; sourceTree = "<group>"; };
+		2906CBA0165B23AF000D43E4 /* zmq_socket.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_socket.3; sourceTree = "<group>"; };
+		2906CBA1165B23AF000D43E4 /* zmq_socket.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_socket.html; sourceTree = "<group>"; };
+		2906CBA2165B23AF000D43E4 /* zmq_socket.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_socket.txt; sourceTree = "<group>"; };
+		2906CBA3165B23AF000D43E4 /* zmq_strerror.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_strerror.3; sourceTree = "<group>"; };
+		2906CBA4165B23AF000D43E4 /* zmq_strerror.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_strerror.html; sourceTree = "<group>"; };
+		2906CBA5165B23AF000D43E4 /* zmq_strerror.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_strerror.txt; sourceTree = "<group>"; };
+		2906CBA6165B23AF000D43E4 /* zmq_tcp.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_tcp.7; sourceTree = "<group>"; };
+		2906CBA7165B23AF000D43E4 /* zmq_tcp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_tcp.html; sourceTree = "<group>"; };
+		2906CBA8165B23AF000D43E4 /* zmq_tcp.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_tcp.txt; sourceTree = "<group>"; };
+		2906CBA9165B23AF000D43E4 /* zmq_term.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_term.3; sourceTree = "<group>"; };
+		2906CBAA165B23AF000D43E4 /* zmq_term.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_term.html; sourceTree = "<group>"; };
+		2906CBAB165B23AF000D43E4 /* zmq_term.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_term.txt; sourceTree = "<group>"; };
+		2906CBAC165B23AF000D43E4 /* zmq_version.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_version.3; sourceTree = "<group>"; };
+		2906CBAD165B23AF000D43E4 /* zmq_version.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zmq_version.html; sourceTree = "<group>"; };
+		2906CBAE165B23AF000D43E4 /* zmq_version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zmq_version.txt; sourceTree = "<group>"; };
+		2906CBB1165B23AF000D43E4 /* libpgm-5.1.118~dfsg.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libpgm-5.1.118~dfsg.tar.gz"; sourceTree = "<group>"; };
+		2906CBB2165B23AF000D43E4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2906CBB3165B23AF000D43E4 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		2906CBB4165B23AF000D43E4 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		2906CBB6165B23AF000D43E4 /* xmlParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xmlParser.cpp; sourceTree = "<group>"; };
+		2906CBB7165B23AF000D43E4 /* xmlParser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xmlParser.hpp; sourceTree = "<group>"; };
+		2906CBB9165B23AF000D43E4 /* zmq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq.h; sourceTree = "<group>"; };
+		2906CBBA165B23AF000D43E4 /* zmq.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zmq.hpp; sourceTree = "<group>"; };
+		2906CBBB165B23AF000D43E4 /* zmq_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq_utils.h; sourceTree = "<group>"; };
+		2906CBBC165B23AF000D43E4 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		2906CBBD165B23AF000D43E4 /* libtool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = libtool; sourceTree = "<group>"; };
+		2906CBBE165B23AF000D43E4 /* MAINTAINERS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MAINTAINERS; sourceTree = "<group>"; };
+		2906CBBF165B23AF000D43E4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2906CBC0165B23AF000D43E4 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		2906CBC1165B23AF000D43E4 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		2906CBC2165B23AF000D43E4 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		2906CBC5165B23AF000D43E4 /* inproc_lat.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inproc_lat.Po; sourceTree = "<group>"; };
+		2906CBC6165B23AF000D43E4 /* inproc_thr.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inproc_thr.Po; sourceTree = "<group>"; };
+		2906CBC7165B23AF000D43E4 /* local_lat.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local_lat.Po; sourceTree = "<group>"; };
+		2906CBC8165B23AF000D43E4 /* local_thr.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local_thr.Po; sourceTree = "<group>"; };
+		2906CBC9165B23AF000D43E4 /* remote_lat.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = remote_lat.Po; sourceTree = "<group>"; };
+		2906CBCA165B23AF000D43E4 /* remote_thr.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = remote_thr.Po; sourceTree = "<group>"; };
+		2906CBCB165B23AF000D43E4 /* inproc_lat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inproc_lat.cpp; sourceTree = "<group>"; };
+		2906CBCC165B23AF000D43E4 /* inproc_thr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inproc_thr.cpp; sourceTree = "<group>"; };
+		2906CBCD165B23AF000D43E4 /* local_lat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = local_lat.cpp; sourceTree = "<group>"; };
+		2906CBCE165B23AF000D43E4 /* local_thr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = local_thr.cpp; sourceTree = "<group>"; };
+		2906CBCF165B23AF000D43E4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2906CBD0165B23AF000D43E4 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		2906CBD1165B23AF000D43E4 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		2906CBD2165B23AF000D43E4 /* remote_lat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = remote_lat.cpp; sourceTree = "<group>"; };
+		2906CBD3165B23AF000D43E4 /* remote_thr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = remote_thr.cpp; sourceTree = "<group>"; };
+		2906CBD4165B23AF000D43E4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		2906CBD7165B23AF000D43E4 /* libzmq_la-clock.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-clock.Plo"; sourceTree = "<group>"; };
+		2906CBD8165B23AF000D43E4 /* libzmq_la-command.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-command.Plo"; sourceTree = "<group>"; };
+		2906CBD9165B23AF000D43E4 /* libzmq_la-connect_session.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-connect_session.Plo"; sourceTree = "<group>"; };
+		2906CBDA165B23AF000D43E4 /* libzmq_la-ctx.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-ctx.Plo"; sourceTree = "<group>"; };
+		2906CBDB165B23AF000D43E4 /* libzmq_la-decoder.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-decoder.Plo"; sourceTree = "<group>"; };
+		2906CBDC165B23AF000D43E4 /* libzmq_la-device.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-device.Plo"; sourceTree = "<group>"; };
+		2906CBDD165B23AF000D43E4 /* libzmq_la-devpoll.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-devpoll.Plo"; sourceTree = "<group>"; };
+		2906CBDE165B23AF000D43E4 /* libzmq_la-dist.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-dist.Plo"; sourceTree = "<group>"; };
+		2906CBDF165B23AF000D43E4 /* libzmq_la-encoder.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-encoder.Plo"; sourceTree = "<group>"; };
+		2906CBE0165B23AF000D43E4 /* libzmq_la-epoll.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-epoll.Plo"; sourceTree = "<group>"; };
+		2906CBE1165B23AF000D43E4 /* libzmq_la-err.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-err.Plo"; sourceTree = "<group>"; };
+		2906CBE2165B23AF000D43E4 /* libzmq_la-fq.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-fq.Plo"; sourceTree = "<group>"; };
+		2906CBE3165B23AF000D43E4 /* libzmq_la-io_object.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-io_object.Plo"; sourceTree = "<group>"; };
+		2906CBE4165B23AF000D43E4 /* libzmq_la-io_thread.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-io_thread.Plo"; sourceTree = "<group>"; };
+		2906CBE5165B23AF000D43E4 /* libzmq_la-ip.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-ip.Plo"; sourceTree = "<group>"; };
+		2906CBE6165B23AF000D43E4 /* libzmq_la-kqueue.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-kqueue.Plo"; sourceTree = "<group>"; };
+		2906CBE7165B23AF000D43E4 /* libzmq_la-lb.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-lb.Plo"; sourceTree = "<group>"; };
+		2906CBE8165B23AF000D43E4 /* libzmq_la-mailbox.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-mailbox.Plo"; sourceTree = "<group>"; };
+		2906CBE9165B23AF000D43E4 /* libzmq_la-named_session.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-named_session.Plo"; sourceTree = "<group>"; };
+		2906CBEA165B23AF000D43E4 /* libzmq_la-object.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-object.Plo"; sourceTree = "<group>"; };
+		2906CBEB165B23AF000D43E4 /* libzmq_la-options.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-options.Plo"; sourceTree = "<group>"; };
+		2906CBEC165B23AF000D43E4 /* libzmq_la-own.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-own.Plo"; sourceTree = "<group>"; };
+		2906CBED165B23AF000D43E4 /* libzmq_la-pair.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-pair.Plo"; sourceTree = "<group>"; };
+		2906CBEE165B23AF000D43E4 /* libzmq_la-pgm_receiver.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-pgm_receiver.Plo"; sourceTree = "<group>"; };
+		2906CBEF165B23AF000D43E4 /* libzmq_la-pgm_sender.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-pgm_sender.Plo"; sourceTree = "<group>"; };
+		2906CBF0165B23AF000D43E4 /* libzmq_la-pgm_socket.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-pgm_socket.Plo"; sourceTree = "<group>"; };
+		2906CBF1165B23AF000D43E4 /* libzmq_la-pipe.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-pipe.Plo"; sourceTree = "<group>"; };
+		2906CBF2165B23AF000D43E4 /* libzmq_la-poll.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-poll.Plo"; sourceTree = "<group>"; };
+		2906CBF3165B23AF000D43E4 /* libzmq_la-poller_base.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-poller_base.Plo"; sourceTree = "<group>"; };
+		2906CBF4165B23AF000D43E4 /* libzmq_la-pub.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-pub.Plo"; sourceTree = "<group>"; };
+		2906CBF5165B23AF000D43E4 /* libzmq_la-pull.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-pull.Plo"; sourceTree = "<group>"; };
+		2906CBF6165B23AF000D43E4 /* libzmq_la-push.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-push.Plo"; sourceTree = "<group>"; };
+		2906CBF7165B23AF000D43E4 /* libzmq_la-reaper.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-reaper.Plo"; sourceTree = "<group>"; };
+		2906CBF8165B23AF000D43E4 /* libzmq_la-rep.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-rep.Plo"; sourceTree = "<group>"; };
+		2906CBF9165B23AF000D43E4 /* libzmq_la-req.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-req.Plo"; sourceTree = "<group>"; };
+		2906CBFA165B23AF000D43E4 /* libzmq_la-select.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-select.Plo"; sourceTree = "<group>"; };
+		2906CBFB165B23AF000D43E4 /* libzmq_la-session.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-session.Plo"; sourceTree = "<group>"; };
+		2906CBFC165B23AF000D43E4 /* libzmq_la-signaler.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-signaler.Plo"; sourceTree = "<group>"; };
+		2906CBFD165B23AF000D43E4 /* libzmq_la-socket_base.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-socket_base.Plo"; sourceTree = "<group>"; };
+		2906CBFE165B23AF000D43E4 /* libzmq_la-sub.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-sub.Plo"; sourceTree = "<group>"; };
+		2906CBFF165B23AF000D43E4 /* libzmq_la-swap.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-swap.Plo"; sourceTree = "<group>"; };
+		2906CC00165B23AF000D43E4 /* libzmq_la-tcp_connecter.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-tcp_connecter.Plo"; sourceTree = "<group>"; };
+		2906CC01165B23AF000D43E4 /* libzmq_la-tcp_listener.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-tcp_listener.Plo"; sourceTree = "<group>"; };
+		2906CC02165B23AF000D43E4 /* libzmq_la-tcp_socket.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-tcp_socket.Plo"; sourceTree = "<group>"; };
+		2906CC03165B23AF000D43E4 /* libzmq_la-thread.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-thread.Plo"; sourceTree = "<group>"; };
+		2906CC04165B23AF000D43E4 /* libzmq_la-transient_session.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-transient_session.Plo"; sourceTree = "<group>"; };
+		2906CC05165B23AF000D43E4 /* libzmq_la-trie.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-trie.Plo"; sourceTree = "<group>"; };
+		2906CC06165B23AF000D43E4 /* libzmq_la-uuid.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-uuid.Plo"; sourceTree = "<group>"; };
+		2906CC07165B23AF000D43E4 /* libzmq_la-xpub.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-xpub.Plo"; sourceTree = "<group>"; };
+		2906CC08165B23AF000D43E4 /* libzmq_la-xrep.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-xrep.Plo"; sourceTree = "<group>"; };
+		2906CC09165B23AF000D43E4 /* libzmq_la-xreq.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-xreq.Plo"; sourceTree = "<group>"; };
+		2906CC0A165B23AF000D43E4 /* libzmq_la-xsub.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-xsub.Plo"; sourceTree = "<group>"; };
+		2906CC0B165B23AF000D43E4 /* libzmq_la-zmq.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-zmq.Plo"; sourceTree = "<group>"; };
+		2906CC0C165B23AF000D43E4 /* libzmq_la-zmq_connecter.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-zmq_connecter.Plo"; sourceTree = "<group>"; };
+		2906CC0D165B23AF000D43E4 /* libzmq_la-zmq_engine.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-zmq_engine.Plo"; sourceTree = "<group>"; };
+		2906CC0E165B23AF000D43E4 /* libzmq_la-zmq_init.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-zmq_init.Plo"; sourceTree = "<group>"; };
+		2906CC0F165B23AF000D43E4 /* libzmq_la-zmq_listener.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libzmq_la-zmq_listener.Plo"; sourceTree = "<group>"; };
+		2906CC10165B23AF000D43E4 /* array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = array.hpp; sourceTree = "<group>"; };
+		2906CC11165B23AF000D43E4 /* atomic_counter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = atomic_counter.hpp; sourceTree = "<group>"; };
+		2906CC12165B23AF000D43E4 /* atomic_ptr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = atomic_ptr.hpp; sourceTree = "<group>"; };
+		2906CC13165B23AF000D43E4 /* blob.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = blob.hpp; sourceTree = "<group>"; };
+		2906CC14165B23AF000D43E4 /* clock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clock.cpp; sourceTree = "<group>"; };
+		2906CC15165B23AF000D43E4 /* clock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = clock.hpp; sourceTree = "<group>"; };
+		2906CC16165B23AF000D43E4 /* command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = command.cpp; sourceTree = "<group>"; };
+		2906CC17165B23AF000D43E4 /* command.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = command.hpp; sourceTree = "<group>"; };
+		2906CC18165B23AF000D43E4 /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
+		2906CC19165B23AF000D43E4 /* connect_session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = connect_session.cpp; sourceTree = "<group>"; };
+		2906CC1A165B23AF000D43E4 /* connect_session.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = connect_session.hpp; sourceTree = "<group>"; };
+		2906CC1B165B23AF000D43E4 /* ctx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ctx.cpp; sourceTree = "<group>"; };
+		2906CC1C165B23AF000D43E4 /* ctx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ctx.hpp; sourceTree = "<group>"; };
+		2906CC1D165B23AF000D43E4 /* decoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = decoder.cpp; sourceTree = "<group>"; };
+		2906CC1E165B23AF000D43E4 /* decoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = decoder.hpp; sourceTree = "<group>"; };
+		2906CC1F165B23AF000D43E4 /* device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = device.cpp; sourceTree = "<group>"; };
+		2906CC20165B23AF000D43E4 /* device.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = device.hpp; sourceTree = "<group>"; };
+		2906CC21165B23AF000D43E4 /* devpoll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = devpoll.cpp; sourceTree = "<group>"; };
+		2906CC22165B23AF000D43E4 /* devpoll.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = devpoll.hpp; sourceTree = "<group>"; };
+		2906CC23165B23AF000D43E4 /* dist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dist.cpp; sourceTree = "<group>"; };
+		2906CC24165B23AF000D43E4 /* dist.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dist.hpp; sourceTree = "<group>"; };
+		2906CC25165B23AF000D43E4 /* encoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encoder.cpp; sourceTree = "<group>"; };
+		2906CC26165B23AF000D43E4 /* encoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = encoder.hpp; sourceTree = "<group>"; };
+		2906CC27165B23AF000D43E4 /* epoll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = epoll.cpp; sourceTree = "<group>"; };
+		2906CC28165B23AF000D43E4 /* epoll.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = epoll.hpp; sourceTree = "<group>"; };
+		2906CC29165B23AF000D43E4 /* err.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = err.cpp; sourceTree = "<group>"; };
+		2906CC2A165B23AF000D43E4 /* err.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = err.hpp; sourceTree = "<group>"; };
+		2906CC2B165B23AF000D43E4 /* fd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fd.hpp; sourceTree = "<group>"; };
+		2906CC2C165B23AF000D43E4 /* fq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fq.cpp; sourceTree = "<group>"; };
+		2906CC2D165B23AF000D43E4 /* fq.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fq.hpp; sourceTree = "<group>"; };
+		2906CC2E165B23AF000D43E4 /* gcc_421_char_traits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gcc_421_char_traits.hpp; sourceTree = "<group>"; };
+		2906CC2F165B23AF000D43E4 /* i_engine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_engine.hpp; sourceTree = "<group>"; };
+		2906CC30165B23AF000D43E4 /* i_inout.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_inout.hpp; sourceTree = "<group>"; };
+		2906CC31165B23AF000D43E4 /* i_poll_events.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = i_poll_events.hpp; sourceTree = "<group>"; };
+		2906CC32165B23AF000D43E4 /* io_object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = io_object.cpp; sourceTree = "<group>"; };
+		2906CC33165B23AF000D43E4 /* io_object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = io_object.hpp; sourceTree = "<group>"; };
+		2906CC34165B23AF000D43E4 /* io_thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = io_thread.cpp; sourceTree = "<group>"; };
+		2906CC35165B23AF000D43E4 /* io_thread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = io_thread.hpp; sourceTree = "<group>"; };
+		2906CC36165B23AF000D43E4 /* ip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ip.cpp; sourceTree = "<group>"; };
+		2906CC37165B23AF000D43E4 /* ip.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ip.hpp; sourceTree = "<group>"; };
+		2906CC38165B23AF000D43E4 /* kqueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kqueue.cpp; sourceTree = "<group>"; };
+		2906CC39165B23AF000D43E4 /* kqueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kqueue.hpp; sourceTree = "<group>"; };
+		2906CC3A165B23AF000D43E4 /* lb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lb.cpp; sourceTree = "<group>"; };
+		2906CC3B165B23AF000D43E4 /* lb.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lb.hpp; sourceTree = "<group>"; };
+		2906CC3C165B23AF000D43E4 /* libzmq.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libzmq.pc; sourceTree = "<group>"; };
+		2906CC3D165B23AF000D43E4 /* libzmq.pc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libzmq.pc.in; sourceTree = "<group>"; };
+		2906CC3E165B23AF000D43E4 /* likely.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = likely.hpp; sourceTree = "<group>"; };
+		2906CC3F165B23AF000D43E4 /* mailbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mailbox.cpp; sourceTree = "<group>"; };
+		2906CC40165B23AF000D43E4 /* mailbox.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mailbox.hpp; sourceTree = "<group>"; };
+		2906CC41165B23AF000D43E4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2906CC42165B23AF000D43E4 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		2906CC43165B23AF000D43E4 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		2906CC44165B23AF000D43E4 /* msg_content.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = msg_content.hpp; sourceTree = "<group>"; };
+		2906CC45165B23AF000D43E4 /* mutex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mutex.hpp; sourceTree = "<group>"; };
+		2906CC46165B23AF000D43E4 /* named_session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = named_session.cpp; sourceTree = "<group>"; };
+		2906CC47165B23AF000D43E4 /* named_session.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = named_session.hpp; sourceTree = "<group>"; };
+		2906CC48165B23AF000D43E4 /* object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = object.cpp; sourceTree = "<group>"; };
+		2906CC49165B23AF000D43E4 /* object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = object.hpp; sourceTree = "<group>"; };
+		2906CC4A165B23AF000D43E4 /* options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = options.cpp; sourceTree = "<group>"; };
+		2906CC4B165B23AF000D43E4 /* options.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = options.hpp; sourceTree = "<group>"; };
+		2906CC4C165B23AF000D43E4 /* own.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = own.cpp; sourceTree = "<group>"; };
+		2906CC4D165B23AF000D43E4 /* own.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = own.hpp; sourceTree = "<group>"; };
+		2906CC4E165B23AF000D43E4 /* pair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pair.cpp; sourceTree = "<group>"; };
+		2906CC4F165B23AF000D43E4 /* pair.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pair.hpp; sourceTree = "<group>"; };
+		2906CC50165B23AF000D43E4 /* pgm_receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pgm_receiver.cpp; sourceTree = "<group>"; };
+		2906CC51165B23AF000D43E4 /* pgm_receiver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pgm_receiver.hpp; sourceTree = "<group>"; };
+		2906CC52165B23AF000D43E4 /* pgm_sender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pgm_sender.cpp; sourceTree = "<group>"; };
+		2906CC53165B23AF000D43E4 /* pgm_sender.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pgm_sender.hpp; sourceTree = "<group>"; };
+		2906CC54165B23AF000D43E4 /* pgm_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pgm_socket.cpp; sourceTree = "<group>"; };
+		2906CC55165B23AF000D43E4 /* pgm_socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pgm_socket.hpp; sourceTree = "<group>"; };
+		2906CC56165B23AF000D43E4 /* pipe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pipe.cpp; sourceTree = "<group>"; };
+		2906CC57165B23AF000D43E4 /* pipe.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pipe.hpp; sourceTree = "<group>"; };
+		2906CC58165B23AF000D43E4 /* platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = platform.hpp; sourceTree = "<group>"; };
+		2906CC59165B23AF000D43E4 /* platform.hpp.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = platform.hpp.in; sourceTree = "<group>"; };
+		2906CC5A165B23AF000D43E4 /* poll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = poll.cpp; sourceTree = "<group>"; };
+		2906CC5B165B23AF000D43E4 /* poll.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = poll.hpp; sourceTree = "<group>"; };
+		2906CC5C165B23AF000D43E4 /* poller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = poller.hpp; sourceTree = "<group>"; };
+		2906CC5D165B23AF000D43E4 /* poller_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = poller_base.cpp; sourceTree = "<group>"; };
+		2906CC5E165B23AF000D43E4 /* poller_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = poller_base.hpp; sourceTree = "<group>"; };
+		2906CC5F165B23AF000D43E4 /* pub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pub.cpp; sourceTree = "<group>"; };
+		2906CC60165B23AF000D43E4 /* pub.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pub.hpp; sourceTree = "<group>"; };
+		2906CC61165B23AF000D43E4 /* pull.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pull.cpp; sourceTree = "<group>"; };
+		2906CC62165B23AF000D43E4 /* pull.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pull.hpp; sourceTree = "<group>"; };
+		2906CC63165B23AF000D43E4 /* push.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = push.cpp; sourceTree = "<group>"; };
+		2906CC64165B23AF000D43E4 /* push.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = push.hpp; sourceTree = "<group>"; };
+		2906CC65165B23AF000D43E4 /* reaper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reaper.cpp; sourceTree = "<group>"; };
+		2906CC66165B23AF000D43E4 /* reaper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = reaper.hpp; sourceTree = "<group>"; };
+		2906CC67165B23AF000D43E4 /* rep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rep.cpp; sourceTree = "<group>"; };
+		2906CC68165B23AF000D43E4 /* rep.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rep.hpp; sourceTree = "<group>"; };
+		2906CC69165B23AF000D43E4 /* req.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = req.cpp; sourceTree = "<group>"; };
+		2906CC6A165B23AF000D43E4 /* req.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = req.hpp; sourceTree = "<group>"; };
+		2906CC6B165B23AF000D43E4 /* select.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = select.cpp; sourceTree = "<group>"; };
+		2906CC6C165B23AF000D43E4 /* select.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = select.hpp; sourceTree = "<group>"; };
+		2906CC6D165B23AF000D43E4 /* semaphore.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = semaphore.hpp; sourceTree = "<group>"; };
+		2906CC6E165B23AF000D43E4 /* session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = session.cpp; sourceTree = "<group>"; };
+		2906CC6F165B23AF000D43E4 /* session.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = session.hpp; sourceTree = "<group>"; };
+		2906CC70165B23AF000D43E4 /* signaler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = signaler.cpp; sourceTree = "<group>"; };
+		2906CC71165B23AF000D43E4 /* signaler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = signaler.hpp; sourceTree = "<group>"; };
+		2906CC72165B23AF000D43E4 /* socket_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = socket_base.cpp; sourceTree = "<group>"; };
+		2906CC73165B23AF000D43E4 /* socket_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = socket_base.hpp; sourceTree = "<group>"; };
+		2906CC74165B23AF000D43E4 /* stamp-h1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "stamp-h1"; sourceTree = "<group>"; };
+		2906CC75165B23AF000D43E4 /* stdint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdint.hpp; sourceTree = "<group>"; };
+		2906CC76165B23AF000D43E4 /* sub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sub.cpp; sourceTree = "<group>"; };
+		2906CC77165B23AF000D43E4 /* sub.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sub.hpp; sourceTree = "<group>"; };
+		2906CC78165B23AF000D43E4 /* swap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = swap.cpp; sourceTree = "<group>"; };
+		2906CC79165B23AF000D43E4 /* swap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = swap.hpp; sourceTree = "<group>"; };
+		2906CC7A165B23AF000D43E4 /* tcp_connecter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcp_connecter.cpp; sourceTree = "<group>"; };
+		2906CC7B165B23AF000D43E4 /* tcp_connecter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tcp_connecter.hpp; sourceTree = "<group>"; };
+		2906CC7C165B23AF000D43E4 /* tcp_listener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcp_listener.cpp; sourceTree = "<group>"; };
+		2906CC7D165B23AF000D43E4 /* tcp_listener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tcp_listener.hpp; sourceTree = "<group>"; };
+		2906CC7E165B23AF000D43E4 /* tcp_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcp_socket.cpp; sourceTree = "<group>"; };
+		2906CC7F165B23AF000D43E4 /* tcp_socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tcp_socket.hpp; sourceTree = "<group>"; };
+		2906CC80165B23AF000D43E4 /* thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = thread.cpp; sourceTree = "<group>"; };
+		2906CC81165B23AF000D43E4 /* thread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = thread.hpp; sourceTree = "<group>"; };
+		2906CC82165B23AF000D43E4 /* transient_session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = transient_session.cpp; sourceTree = "<group>"; };
+		2906CC83165B23AF000D43E4 /* transient_session.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = transient_session.hpp; sourceTree = "<group>"; };
+		2906CC84165B23AF000D43E4 /* trie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trie.cpp; sourceTree = "<group>"; };
+		2906CC85165B23AF000D43E4 /* trie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = trie.hpp; sourceTree = "<group>"; };
+		2906CC86165B23AF000D43E4 /* uuid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uuid.cpp; sourceTree = "<group>"; };
+		2906CC87165B23AF000D43E4 /* uuid.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = uuid.hpp; sourceTree = "<group>"; };
+		2906CC88165B23AF000D43E4 /* windows.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = windows.hpp; sourceTree = "<group>"; };
+		2906CC89165B23AF000D43E4 /* wire.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wire.hpp; sourceTree = "<group>"; };
+		2906CC8A165B23AF000D43E4 /* xpub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xpub.cpp; sourceTree = "<group>"; };
+		2906CC8B165B23AF000D43E4 /* xpub.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xpub.hpp; sourceTree = "<group>"; };
+		2906CC8C165B23AF000D43E4 /* xrep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xrep.cpp; sourceTree = "<group>"; };
+		2906CC8D165B23AF000D43E4 /* xrep.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xrep.hpp; sourceTree = "<group>"; };
+		2906CC8E165B23AF000D43E4 /* xreq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xreq.cpp; sourceTree = "<group>"; };
+		2906CC8F165B23AF000D43E4 /* xreq.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xreq.hpp; sourceTree = "<group>"; };
+		2906CC90165B23AF000D43E4 /* xsub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xsub.cpp; sourceTree = "<group>"; };
+		2906CC91165B23AF000D43E4 /* xsub.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xsub.hpp; sourceTree = "<group>"; };
+		2906CC92165B23AF000D43E4 /* ypipe.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ypipe.hpp; sourceTree = "<group>"; };
+		2906CC93165B23AF000D43E4 /* yqueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = yqueue.hpp; sourceTree = "<group>"; };
+		2906CC94165B23AF000D43E4 /* zmq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zmq.cpp; sourceTree = "<group>"; };
+		2906CC95165B23AF000D43E4 /* zmq_connecter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zmq_connecter.cpp; sourceTree = "<group>"; };
+		2906CC96165B23AF000D43E4 /* zmq_connecter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zmq_connecter.hpp; sourceTree = "<group>"; };
+		2906CC97165B23AF000D43E4 /* zmq_engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zmq_engine.cpp; sourceTree = "<group>"; };
+		2906CC98165B23AF000D43E4 /* zmq_engine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zmq_engine.hpp; sourceTree = "<group>"; };
+		2906CC99165B23AF000D43E4 /* zmq_init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zmq_init.cpp; sourceTree = "<group>"; };
+		2906CC9A165B23AF000D43E4 /* zmq_init.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zmq_init.hpp; sourceTree = "<group>"; };
+		2906CC9B165B23AF000D43E4 /* zmq_listener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zmq_listener.cpp; sourceTree = "<group>"; };
+		2906CC9C165B23AF000D43E4 /* zmq_listener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zmq_listener.hpp; sourceTree = "<group>"; };
+		2906CC9F165B23AF000D43E4 /* test_hwm.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_hwm.Po; sourceTree = "<group>"; };
+		2906CCA0165B23AF000D43E4 /* test_pair_inproc.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_pair_inproc.Po; sourceTree = "<group>"; };
+		2906CCA1165B23AF000D43E4 /* test_pair_ipc.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_pair_ipc.Po; sourceTree = "<group>"; };
+		2906CCA2165B23AF000D43E4 /* test_pair_tcp.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_pair_tcp.Po; sourceTree = "<group>"; };
+		2906CCA3165B23AF000D43E4 /* test_reqrep_inproc.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_reqrep_inproc.Po; sourceTree = "<group>"; };
+		2906CCA4165B23AF000D43E4 /* test_reqrep_ipc.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_reqrep_ipc.Po; sourceTree = "<group>"; };
+		2906CCA5165B23AF000D43E4 /* test_reqrep_tcp.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_reqrep_tcp.Po; sourceTree = "<group>"; };
+		2906CCA6165B23AF000D43E4 /* test_shutdown_stress.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_shutdown_stress.Po; sourceTree = "<group>"; };
+		2906CCA7165B23AF000D43E4 /* test_timeo.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_timeo.Po; sourceTree = "<group>"; };
+		2906CCA8165B23AF000D43E4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2906CCA9165B23AF000D43E4 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		2906CCAA165B23AF000D43E4 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		2906CCAB165B23AF000D43E4 /* test_hwm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_hwm.cpp; sourceTree = "<group>"; };
+		2906CCAC165B23AF000D43E4 /* test_pair_inproc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_pair_inproc.cpp; sourceTree = "<group>"; };
+		2906CCAD165B23AF000D43E4 /* test_pair_ipc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_pair_ipc.cpp; sourceTree = "<group>"; };
+		2906CCAE165B23AF000D43E4 /* test_pair_tcp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_pair_tcp.cpp; sourceTree = "<group>"; };
+		2906CCAF165B23AF000D43E4 /* test_reqrep_inproc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_reqrep_inproc.cpp; sourceTree = "<group>"; };
+		2906CCB0165B23AF000D43E4 /* test_reqrep_ipc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_reqrep_ipc.cpp; sourceTree = "<group>"; };
+		2906CCB1165B23AF000D43E4 /* test_reqrep_tcp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_reqrep_tcp.cpp; sourceTree = "<group>"; };
+		2906CCB2165B23AF000D43E4 /* test_shutdown_stress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_shutdown_stress.cpp; sourceTree = "<group>"; };
+		2906CCB3165B23AF000D43E4 /* test_timeo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_timeo.cpp; sourceTree = "<group>"; };
+		2906CCB4165B23AF000D43E4 /* testutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = testutil.hpp; sourceTree = "<group>"; };
+		2906CCB5165B23AF000D43E4 /* version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
+		2906CCB6165B23AF000D43E4 /* zeromq.spec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zeromq.spec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +770,7 @@
 		2906C7CA165B1F7E000D43E4 = {
 			isa = PBXGroup;
 			children = (
+				2906CB1F165B23AF000D43E4 /* zeromq-2.2.0 */,
 				2906C7DF165B1F7E000D43E4 /* objc-zmq-frame */,
 				2906C7D8165B1F7E000D43E4 /* Frameworks */,
 				2906C7D7165B1F7E000D43E4 /* Products */,
@@ -76,8 +807,11 @@
 		2906C7DF165B1F7E000D43E4 /* objc-zmq-frame */ = {
 			isa = PBXGroup;
 			children = (
-				2906C7E6165B1F7E000D43E4 /* objc_zmq_frame.h */,
-				2906C7E7165B1F7E000D43E4 /* objc_zmq_frame.m */,
+				2906C7F8165B2001000D43E4 /* ZMQContext.h */,
+				2906C7F9165B2001000D43E4 /* ZMQContext.m */,
+				2906C7FA165B2001000D43E4 /* ZMQObjC.h */,
+				2906C7FB165B2001000D43E4 /* ZMQSocket.h */,
+				2906C7FC165B2001000D43E4 /* ZMQSocket.m */,
 				2906C7E0165B1F7E000D43E4 /* Supporting Files */,
 			);
 			path = "objc-zmq-frame";
@@ -93,6 +827,575 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2906CB1F165B23AF000D43E4 /* zeromq-2.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB20165B23AF000D43E4 /* acinclude.m4 */,
+				2906CB21165B23AF000D43E4 /* aclocal.m4 */,
+				2906CB22165B23AF000D43E4 /* AUTHORS */,
+				2906CB23165B23AF000D43E4 /* autogen.sh */,
+				2906CB24165B23AF000D43E4 /* builds */,
+				2906CB3C165B23AF000D43E4 /* ChangeLog */,
+				2906CB3D165B23AF000D43E4 /* config */,
+				2906CB4A165B23AF000D43E4 /* config.log */,
+				2906CB4B165B23AF000D43E4 /* config.status */,
+				2906CB4C165B23AF000D43E4 /* configure */,
+				2906CB4D165B23AF000D43E4 /* configure.in */,
+				2906CB4E165B23AF000D43E4 /* COPYING */,
+				2906CB4F165B23AF000D43E4 /* COPYING.LESSER */,
+				2906CB50165B23AF000D43E4 /* doc */,
+				2906CBAF165B23AF000D43E4 /* foreign */,
+				2906CBB8165B23AF000D43E4 /* include */,
+				2906CBBC165B23AF000D43E4 /* INSTALL */,
+				2906CBBD165B23AF000D43E4 /* libtool */,
+				2906CBBE165B23AF000D43E4 /* MAINTAINERS */,
+				2906CBBF165B23AF000D43E4 /* Makefile */,
+				2906CBC0165B23AF000D43E4 /* Makefile.am */,
+				2906CBC1165B23AF000D43E4 /* Makefile.in */,
+				2906CBC2165B23AF000D43E4 /* NEWS */,
+				2906CBC3165B23AF000D43E4 /* perf */,
+				2906CBD4165B23AF000D43E4 /* README */,
+				2906CBD5165B23AF000D43E4 /* src */,
+				2906CC9D165B23AF000D43E4 /* tests */,
+				2906CCB5165B23AF000D43E4 /* version.sh */,
+				2906CCB6165B23AF000D43E4 /* zeromq.spec */,
+			);
+			name = "zeromq-2.2.0";
+			path = "objc-zmq-frame/zeromq-2.2.0";
+			sourceTree = "<group>";
+		};
+		2906CB24165B23AF000D43E4 /* builds */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB25165B23AF000D43E4 /* msvc */,
+				2906CB39165B23AF000D43E4 /* redhat */,
+			);
+			path = builds;
+			sourceTree = "<group>";
+		};
+		2906CB25165B23AF000D43E4 /* msvc */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB26165B23AF000D43E4 /* c_local_lat */,
+				2906CB28165B23AF000D43E4 /* c_local_thr */,
+				2906CB2A165B23AF000D43E4 /* c_remote_lat */,
+				2906CB2C165B23AF000D43E4 /* c_remote_thr */,
+				2906CB2E165B23AF000D43E4 /* inproc_lat */,
+				2906CB30165B23AF000D43E4 /* inproc_thr */,
+				2906CB32165B23AF000D43E4 /* libzmq */,
+				2906CB34165B23AF000D43E4 /* Makefile */,
+				2906CB35165B23AF000D43E4 /* Makefile.am */,
+				2906CB36165B23AF000D43E4 /* Makefile.in */,
+				2906CB37165B23AF000D43E4 /* msvc.sln */,
+				2906CB38165B23AF000D43E4 /* platform.hpp */,
+			);
+			path = msvc;
+			sourceTree = "<group>";
+		};
+		2906CB26165B23AF000D43E4 /* c_local_lat */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB27165B23AF000D43E4 /* c_local_lat.vcproj */,
+			);
+			path = c_local_lat;
+			sourceTree = "<group>";
+		};
+		2906CB28165B23AF000D43E4 /* c_local_thr */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB29165B23AF000D43E4 /* c_local_thr.vcproj */,
+			);
+			path = c_local_thr;
+			sourceTree = "<group>";
+		};
+		2906CB2A165B23AF000D43E4 /* c_remote_lat */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB2B165B23AF000D43E4 /* c_remote_lat.vcproj */,
+			);
+			path = c_remote_lat;
+			sourceTree = "<group>";
+		};
+		2906CB2C165B23AF000D43E4 /* c_remote_thr */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB2D165B23AF000D43E4 /* c_remote_thr.vcproj */,
+			);
+			path = c_remote_thr;
+			sourceTree = "<group>";
+		};
+		2906CB2E165B23AF000D43E4 /* inproc_lat */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB2F165B23AF000D43E4 /* inproc_lat.vcproj */,
+			);
+			path = inproc_lat;
+			sourceTree = "<group>";
+		};
+		2906CB30165B23AF000D43E4 /* inproc_thr */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB31165B23AF000D43E4 /* inproc_thr.vcproj */,
+			);
+			path = inproc_thr;
+			sourceTree = "<group>";
+		};
+		2906CB32165B23AF000D43E4 /* libzmq */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB33165B23AF000D43E4 /* libzmq.vcproj */,
+			);
+			path = libzmq;
+			sourceTree = "<group>";
+		};
+		2906CB39165B23AF000D43E4 /* redhat */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB3A165B23AF000D43E4 /* zeromq.spec */,
+				2906CB3B165B23AF000D43E4 /* zeromq.spec.in */,
+			);
+			path = redhat;
+			sourceTree = "<group>";
+		};
+		2906CB3D165B23AF000D43E4 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB3E165B23AF000D43E4 /* compile */,
+				2906CB3F165B23AF000D43E4 /* config.guess */,
+				2906CB40165B23AF000D43E4 /* config.sub */,
+				2906CB41165B23AF000D43E4 /* depcomp */,
+				2906CB42165B23AF000D43E4 /* install-sh */,
+				2906CB43165B23AF000D43E4 /* libtool.m4 */,
+				2906CB44165B23AF000D43E4 /* ltmain.sh */,
+				2906CB45165B23AF000D43E4 /* ltoptions.m4 */,
+				2906CB46165B23AF000D43E4 /* ltsugar.m4 */,
+				2906CB47165B23AF000D43E4 /* ltversion.m4 */,
+				2906CB48165B23AF000D43E4 /* lt~obsolete.m4 */,
+				2906CB49165B23AF000D43E4 /* missing */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		2906CB50165B23AF000D43E4 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				2906CB51165B23AF000D43E4 /* asciidoc.conf */,
+				2906CB52165B23AF000D43E4 /* Makefile */,
+				2906CB53165B23AF000D43E4 /* Makefile.am */,
+				2906CB54165B23AF000D43E4 /* Makefile.in */,
+				2906CB55165B23AF000D43E4 /* zmq.7 */,
+				2906CB56165B23AF000D43E4 /* zmq.html */,
+				2906CB57165B23AF000D43E4 /* zmq.txt */,
+				2906CB58165B23AF000D43E4 /* zmq_bind.3 */,
+				2906CB59165B23AF000D43E4 /* zmq_bind.html */,
+				2906CB5A165B23AF000D43E4 /* zmq_bind.txt */,
+				2906CB5B165B23AF000D43E4 /* zmq_close.3 */,
+				2906CB5C165B23AF000D43E4 /* zmq_close.html */,
+				2906CB5D165B23AF000D43E4 /* zmq_close.txt */,
+				2906CB5E165B23AF000D43E4 /* zmq_connect.3 */,
+				2906CB5F165B23AF000D43E4 /* zmq_connect.html */,
+				2906CB60165B23AF000D43E4 /* zmq_connect.txt */,
+				2906CB61165B23AF000D43E4 /* zmq_cpp.7 */,
+				2906CB62165B23AF000D43E4 /* zmq_cpp.html */,
+				2906CB63165B23AF000D43E4 /* zmq_cpp.txt */,
+				2906CB64165B23AF000D43E4 /* zmq_device.3 */,
+				2906CB65165B23AF000D43E4 /* zmq_device.html */,
+				2906CB66165B23AF000D43E4 /* zmq_device.txt */,
+				2906CB67165B23AF000D43E4 /* zmq_epgm.7 */,
+				2906CB68165B23AF000D43E4 /* zmq_epgm.html */,
+				2906CB69165B23AF000D43E4 /* zmq_epgm.txt */,
+				2906CB6A165B23AF000D43E4 /* zmq_errno.3 */,
+				2906CB6B165B23AF000D43E4 /* zmq_errno.html */,
+				2906CB6C165B23AF000D43E4 /* zmq_errno.txt */,
+				2906CB6D165B23AF000D43E4 /* zmq_getsockopt.3 */,
+				2906CB6E165B23AF000D43E4 /* zmq_getsockopt.html */,
+				2906CB6F165B23AF000D43E4 /* zmq_getsockopt.txt */,
+				2906CB70165B23AF000D43E4 /* zmq_init.3 */,
+				2906CB71165B23AF000D43E4 /* zmq_init.html */,
+				2906CB72165B23AF000D43E4 /* zmq_init.txt */,
+				2906CB73165B23AF000D43E4 /* zmq_inproc.7 */,
+				2906CB74165B23AF000D43E4 /* zmq_inproc.html */,
+				2906CB75165B23AF000D43E4 /* zmq_inproc.txt */,
+				2906CB76165B23AF000D43E4 /* zmq_ipc.7 */,
+				2906CB77165B23AF000D43E4 /* zmq_ipc.html */,
+				2906CB78165B23AF000D43E4 /* zmq_ipc.txt */,
+				2906CB79165B23AF000D43E4 /* zmq_msg_close.3 */,
+				2906CB7A165B23AF000D43E4 /* zmq_msg_close.html */,
+				2906CB7B165B23AF000D43E4 /* zmq_msg_close.txt */,
+				2906CB7C165B23AF000D43E4 /* zmq_msg_copy.3 */,
+				2906CB7D165B23AF000D43E4 /* zmq_msg_copy.html */,
+				2906CB7E165B23AF000D43E4 /* zmq_msg_copy.txt */,
+				2906CB7F165B23AF000D43E4 /* zmq_msg_data.3 */,
+				2906CB80165B23AF000D43E4 /* zmq_msg_data.html */,
+				2906CB81165B23AF000D43E4 /* zmq_msg_data.txt */,
+				2906CB82165B23AF000D43E4 /* zmq_msg_init.3 */,
+				2906CB83165B23AF000D43E4 /* zmq_msg_init.html */,
+				2906CB84165B23AF000D43E4 /* zmq_msg_init.txt */,
+				2906CB85165B23AF000D43E4 /* zmq_msg_init_data.3 */,
+				2906CB86165B23AF000D43E4 /* zmq_msg_init_data.html */,
+				2906CB87165B23AF000D43E4 /* zmq_msg_init_data.txt */,
+				2906CB88165B23AF000D43E4 /* zmq_msg_init_size.3 */,
+				2906CB89165B23AF000D43E4 /* zmq_msg_init_size.html */,
+				2906CB8A165B23AF000D43E4 /* zmq_msg_init_size.txt */,
+				2906CB8B165B23AF000D43E4 /* zmq_msg_move.3 */,
+				2906CB8C165B23AF000D43E4 /* zmq_msg_move.html */,
+				2906CB8D165B23AF000D43E4 /* zmq_msg_move.txt */,
+				2906CB8E165B23AF000D43E4 /* zmq_msg_size.3 */,
+				2906CB8F165B23AF000D43E4 /* zmq_msg_size.html */,
+				2906CB90165B23AF000D43E4 /* zmq_msg_size.txt */,
+				2906CB91165B23AF000D43E4 /* zmq_pgm.7 */,
+				2906CB92165B23AF000D43E4 /* zmq_pgm.html */,
+				2906CB93165B23AF000D43E4 /* zmq_pgm.txt */,
+				2906CB94165B23AF000D43E4 /* zmq_poll.3 */,
+				2906CB95165B23AF000D43E4 /* zmq_poll.html */,
+				2906CB96165B23AF000D43E4 /* zmq_poll.txt */,
+				2906CB97165B23AF000D43E4 /* zmq_recv.3 */,
+				2906CB98165B23AF000D43E4 /* zmq_recv.html */,
+				2906CB99165B23AF000D43E4 /* zmq_recv.txt */,
+				2906CB9A165B23AF000D43E4 /* zmq_send.3 */,
+				2906CB9B165B23AF000D43E4 /* zmq_send.html */,
+				2906CB9C165B23AF000D43E4 /* zmq_send.txt */,
+				2906CB9D165B23AF000D43E4 /* zmq_setsockopt.3 */,
+				2906CB9E165B23AF000D43E4 /* zmq_setsockopt.html */,
+				2906CB9F165B23AF000D43E4 /* zmq_setsockopt.txt */,
+				2906CBA0165B23AF000D43E4 /* zmq_socket.3 */,
+				2906CBA1165B23AF000D43E4 /* zmq_socket.html */,
+				2906CBA2165B23AF000D43E4 /* zmq_socket.txt */,
+				2906CBA3165B23AF000D43E4 /* zmq_strerror.3 */,
+				2906CBA4165B23AF000D43E4 /* zmq_strerror.html */,
+				2906CBA5165B23AF000D43E4 /* zmq_strerror.txt */,
+				2906CBA6165B23AF000D43E4 /* zmq_tcp.7 */,
+				2906CBA7165B23AF000D43E4 /* zmq_tcp.html */,
+				2906CBA8165B23AF000D43E4 /* zmq_tcp.txt */,
+				2906CBA9165B23AF000D43E4 /* zmq_term.3 */,
+				2906CBAA165B23AF000D43E4 /* zmq_term.html */,
+				2906CBAB165B23AF000D43E4 /* zmq_term.txt */,
+				2906CBAC165B23AF000D43E4 /* zmq_version.3 */,
+				2906CBAD165B23AF000D43E4 /* zmq_version.html */,
+				2906CBAE165B23AF000D43E4 /* zmq_version.txt */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		2906CBAF165B23AF000D43E4 /* foreign */ = {
+			isa = PBXGroup;
+			children = (
+				2906CBB0165B23AF000D43E4 /* openpgm */,
+				2906CBB5165B23AF000D43E4 /* xmlParser */,
+			);
+			path = foreign;
+			sourceTree = "<group>";
+		};
+		2906CBB0165B23AF000D43E4 /* openpgm */ = {
+			isa = PBXGroup;
+			children = (
+				2906CBB1165B23AF000D43E4 /* libpgm-5.1.118~dfsg.tar.gz */,
+				2906CBB2165B23AF000D43E4 /* Makefile */,
+				2906CBB3165B23AF000D43E4 /* Makefile.am */,
+				2906CBB4165B23AF000D43E4 /* Makefile.in */,
+			);
+			path = openpgm;
+			sourceTree = "<group>";
+		};
+		2906CBB5165B23AF000D43E4 /* xmlParser */ = {
+			isa = PBXGroup;
+			children = (
+				2906CBB6165B23AF000D43E4 /* xmlParser.cpp */,
+				2906CBB7165B23AF000D43E4 /* xmlParser.hpp */,
+			);
+			path = xmlParser;
+			sourceTree = "<group>";
+		};
+		2906CBB8165B23AF000D43E4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2906CBB9165B23AF000D43E4 /* zmq.h */,
+				2906CBBA165B23AF000D43E4 /* zmq.hpp */,
+				2906CBBB165B23AF000D43E4 /* zmq_utils.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2906CBC3165B23AF000D43E4 /* perf */ = {
+			isa = PBXGroup;
+			children = (
+				2906CBC4165B23AF000D43E4 /* .deps */,
+				2906CBCB165B23AF000D43E4 /* inproc_lat.cpp */,
+				2906CBCC165B23AF000D43E4 /* inproc_thr.cpp */,
+				2906CBCD165B23AF000D43E4 /* local_lat.cpp */,
+				2906CBCE165B23AF000D43E4 /* local_thr.cpp */,
+				2906CBCF165B23AF000D43E4 /* Makefile */,
+				2906CBD0165B23AF000D43E4 /* Makefile.am */,
+				2906CBD1165B23AF000D43E4 /* Makefile.in */,
+				2906CBD2165B23AF000D43E4 /* remote_lat.cpp */,
+				2906CBD3165B23AF000D43E4 /* remote_thr.cpp */,
+			);
+			path = perf;
+			sourceTree = "<group>";
+		};
+		2906CBC4165B23AF000D43E4 /* .deps */ = {
+			isa = PBXGroup;
+			children = (
+				2906CBC5165B23AF000D43E4 /* inproc_lat.Po */,
+				2906CBC6165B23AF000D43E4 /* inproc_thr.Po */,
+				2906CBC7165B23AF000D43E4 /* local_lat.Po */,
+				2906CBC8165B23AF000D43E4 /* local_thr.Po */,
+				2906CBC9165B23AF000D43E4 /* remote_lat.Po */,
+				2906CBCA165B23AF000D43E4 /* remote_thr.Po */,
+			);
+			path = .deps;
+			sourceTree = "<group>";
+		};
+		2906CBD5165B23AF000D43E4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2906CBD6165B23AF000D43E4 /* .deps */,
+				2906CC10165B23AF000D43E4 /* array.hpp */,
+				2906CC11165B23AF000D43E4 /* atomic_counter.hpp */,
+				2906CC12165B23AF000D43E4 /* atomic_ptr.hpp */,
+				2906CC13165B23AF000D43E4 /* blob.hpp */,
+				2906CC14165B23AF000D43E4 /* clock.cpp */,
+				2906CC15165B23AF000D43E4 /* clock.hpp */,
+				2906CC16165B23AF000D43E4 /* command.cpp */,
+				2906CC17165B23AF000D43E4 /* command.hpp */,
+				2906CC18165B23AF000D43E4 /* config.hpp */,
+				2906CC19165B23AF000D43E4 /* connect_session.cpp */,
+				2906CC1A165B23AF000D43E4 /* connect_session.hpp */,
+				2906CC1B165B23AF000D43E4 /* ctx.cpp */,
+				2906CC1C165B23AF000D43E4 /* ctx.hpp */,
+				2906CC1D165B23AF000D43E4 /* decoder.cpp */,
+				2906CC1E165B23AF000D43E4 /* decoder.hpp */,
+				2906CC1F165B23AF000D43E4 /* device.cpp */,
+				2906CC20165B23AF000D43E4 /* device.hpp */,
+				2906CC21165B23AF000D43E4 /* devpoll.cpp */,
+				2906CC22165B23AF000D43E4 /* devpoll.hpp */,
+				2906CC23165B23AF000D43E4 /* dist.cpp */,
+				2906CC24165B23AF000D43E4 /* dist.hpp */,
+				2906CC25165B23AF000D43E4 /* encoder.cpp */,
+				2906CC26165B23AF000D43E4 /* encoder.hpp */,
+				2906CC27165B23AF000D43E4 /* epoll.cpp */,
+				2906CC28165B23AF000D43E4 /* epoll.hpp */,
+				2906CC29165B23AF000D43E4 /* err.cpp */,
+				2906CC2A165B23AF000D43E4 /* err.hpp */,
+				2906CC2B165B23AF000D43E4 /* fd.hpp */,
+				2906CC2C165B23AF000D43E4 /* fq.cpp */,
+				2906CC2D165B23AF000D43E4 /* fq.hpp */,
+				2906CC2E165B23AF000D43E4 /* gcc_421_char_traits.hpp */,
+				2906CC2F165B23AF000D43E4 /* i_engine.hpp */,
+				2906CC30165B23AF000D43E4 /* i_inout.hpp */,
+				2906CC31165B23AF000D43E4 /* i_poll_events.hpp */,
+				2906CC32165B23AF000D43E4 /* io_object.cpp */,
+				2906CC33165B23AF000D43E4 /* io_object.hpp */,
+				2906CC34165B23AF000D43E4 /* io_thread.cpp */,
+				2906CC35165B23AF000D43E4 /* io_thread.hpp */,
+				2906CC36165B23AF000D43E4 /* ip.cpp */,
+				2906CC37165B23AF000D43E4 /* ip.hpp */,
+				2906CC38165B23AF000D43E4 /* kqueue.cpp */,
+				2906CC39165B23AF000D43E4 /* kqueue.hpp */,
+				2906CC3A165B23AF000D43E4 /* lb.cpp */,
+				2906CC3B165B23AF000D43E4 /* lb.hpp */,
+				2906CC3C165B23AF000D43E4 /* libzmq.pc */,
+				2906CC3D165B23AF000D43E4 /* libzmq.pc.in */,
+				2906CC3E165B23AF000D43E4 /* likely.hpp */,
+				2906CC3F165B23AF000D43E4 /* mailbox.cpp */,
+				2906CC40165B23AF000D43E4 /* mailbox.hpp */,
+				2906CC41165B23AF000D43E4 /* Makefile */,
+				2906CC42165B23AF000D43E4 /* Makefile.am */,
+				2906CC43165B23AF000D43E4 /* Makefile.in */,
+				2906CC44165B23AF000D43E4 /* msg_content.hpp */,
+				2906CC45165B23AF000D43E4 /* mutex.hpp */,
+				2906CC46165B23AF000D43E4 /* named_session.cpp */,
+				2906CC47165B23AF000D43E4 /* named_session.hpp */,
+				2906CC48165B23AF000D43E4 /* object.cpp */,
+				2906CC49165B23AF000D43E4 /* object.hpp */,
+				2906CC4A165B23AF000D43E4 /* options.cpp */,
+				2906CC4B165B23AF000D43E4 /* options.hpp */,
+				2906CC4C165B23AF000D43E4 /* own.cpp */,
+				2906CC4D165B23AF000D43E4 /* own.hpp */,
+				2906CC4E165B23AF000D43E4 /* pair.cpp */,
+				2906CC4F165B23AF000D43E4 /* pair.hpp */,
+				2906CC50165B23AF000D43E4 /* pgm_receiver.cpp */,
+				2906CC51165B23AF000D43E4 /* pgm_receiver.hpp */,
+				2906CC52165B23AF000D43E4 /* pgm_sender.cpp */,
+				2906CC53165B23AF000D43E4 /* pgm_sender.hpp */,
+				2906CC54165B23AF000D43E4 /* pgm_socket.cpp */,
+				2906CC55165B23AF000D43E4 /* pgm_socket.hpp */,
+				2906CC56165B23AF000D43E4 /* pipe.cpp */,
+				2906CC57165B23AF000D43E4 /* pipe.hpp */,
+				2906CC58165B23AF000D43E4 /* platform.hpp */,
+				2906CC59165B23AF000D43E4 /* platform.hpp.in */,
+				2906CC5A165B23AF000D43E4 /* poll.cpp */,
+				2906CC5B165B23AF000D43E4 /* poll.hpp */,
+				2906CC5C165B23AF000D43E4 /* poller.hpp */,
+				2906CC5D165B23AF000D43E4 /* poller_base.cpp */,
+				2906CC5E165B23AF000D43E4 /* poller_base.hpp */,
+				2906CC5F165B23AF000D43E4 /* pub.cpp */,
+				2906CC60165B23AF000D43E4 /* pub.hpp */,
+				2906CC61165B23AF000D43E4 /* pull.cpp */,
+				2906CC62165B23AF000D43E4 /* pull.hpp */,
+				2906CC63165B23AF000D43E4 /* push.cpp */,
+				2906CC64165B23AF000D43E4 /* push.hpp */,
+				2906CC65165B23AF000D43E4 /* reaper.cpp */,
+				2906CC66165B23AF000D43E4 /* reaper.hpp */,
+				2906CC67165B23AF000D43E4 /* rep.cpp */,
+				2906CC68165B23AF000D43E4 /* rep.hpp */,
+				2906CC69165B23AF000D43E4 /* req.cpp */,
+				2906CC6A165B23AF000D43E4 /* req.hpp */,
+				2906CC6B165B23AF000D43E4 /* select.cpp */,
+				2906CC6C165B23AF000D43E4 /* select.hpp */,
+				2906CC6D165B23AF000D43E4 /* semaphore.hpp */,
+				2906CC6E165B23AF000D43E4 /* session.cpp */,
+				2906CC6F165B23AF000D43E4 /* session.hpp */,
+				2906CC70165B23AF000D43E4 /* signaler.cpp */,
+				2906CC71165B23AF000D43E4 /* signaler.hpp */,
+				2906CC72165B23AF000D43E4 /* socket_base.cpp */,
+				2906CC73165B23AF000D43E4 /* socket_base.hpp */,
+				2906CC74165B23AF000D43E4 /* stamp-h1 */,
+				2906CC75165B23AF000D43E4 /* stdint.hpp */,
+				2906CC76165B23AF000D43E4 /* sub.cpp */,
+				2906CC77165B23AF000D43E4 /* sub.hpp */,
+				2906CC78165B23AF000D43E4 /* swap.cpp */,
+				2906CC79165B23AF000D43E4 /* swap.hpp */,
+				2906CC7A165B23AF000D43E4 /* tcp_connecter.cpp */,
+				2906CC7B165B23AF000D43E4 /* tcp_connecter.hpp */,
+				2906CC7C165B23AF000D43E4 /* tcp_listener.cpp */,
+				2906CC7D165B23AF000D43E4 /* tcp_listener.hpp */,
+				2906CC7E165B23AF000D43E4 /* tcp_socket.cpp */,
+				2906CC7F165B23AF000D43E4 /* tcp_socket.hpp */,
+				2906CC80165B23AF000D43E4 /* thread.cpp */,
+				2906CC81165B23AF000D43E4 /* thread.hpp */,
+				2906CC82165B23AF000D43E4 /* transient_session.cpp */,
+				2906CC83165B23AF000D43E4 /* transient_session.hpp */,
+				2906CC84165B23AF000D43E4 /* trie.cpp */,
+				2906CC85165B23AF000D43E4 /* trie.hpp */,
+				2906CC86165B23AF000D43E4 /* uuid.cpp */,
+				2906CC87165B23AF000D43E4 /* uuid.hpp */,
+				2906CC88165B23AF000D43E4 /* windows.hpp */,
+				2906CC89165B23AF000D43E4 /* wire.hpp */,
+				2906CC8A165B23AF000D43E4 /* xpub.cpp */,
+				2906CC8B165B23AF000D43E4 /* xpub.hpp */,
+				2906CC8C165B23AF000D43E4 /* xrep.cpp */,
+				2906CC8D165B23AF000D43E4 /* xrep.hpp */,
+				2906CC8E165B23AF000D43E4 /* xreq.cpp */,
+				2906CC8F165B23AF000D43E4 /* xreq.hpp */,
+				2906CC90165B23AF000D43E4 /* xsub.cpp */,
+				2906CC91165B23AF000D43E4 /* xsub.hpp */,
+				2906CC92165B23AF000D43E4 /* ypipe.hpp */,
+				2906CC93165B23AF000D43E4 /* yqueue.hpp */,
+				2906CC94165B23AF000D43E4 /* zmq.cpp */,
+				2906CC95165B23AF000D43E4 /* zmq_connecter.cpp */,
+				2906CC96165B23AF000D43E4 /* zmq_connecter.hpp */,
+				2906CC97165B23AF000D43E4 /* zmq_engine.cpp */,
+				2906CC98165B23AF000D43E4 /* zmq_engine.hpp */,
+				2906CC99165B23AF000D43E4 /* zmq_init.cpp */,
+				2906CC9A165B23AF000D43E4 /* zmq_init.hpp */,
+				2906CC9B165B23AF000D43E4 /* zmq_listener.cpp */,
+				2906CC9C165B23AF000D43E4 /* zmq_listener.hpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		2906CBD6165B23AF000D43E4 /* .deps */ = {
+			isa = PBXGroup;
+			children = (
+				2906CBD7165B23AF000D43E4 /* libzmq_la-clock.Plo */,
+				2906CBD8165B23AF000D43E4 /* libzmq_la-command.Plo */,
+				2906CBD9165B23AF000D43E4 /* libzmq_la-connect_session.Plo */,
+				2906CBDA165B23AF000D43E4 /* libzmq_la-ctx.Plo */,
+				2906CBDB165B23AF000D43E4 /* libzmq_la-decoder.Plo */,
+				2906CBDC165B23AF000D43E4 /* libzmq_la-device.Plo */,
+				2906CBDD165B23AF000D43E4 /* libzmq_la-devpoll.Plo */,
+				2906CBDE165B23AF000D43E4 /* libzmq_la-dist.Plo */,
+				2906CBDF165B23AF000D43E4 /* libzmq_la-encoder.Plo */,
+				2906CBE0165B23AF000D43E4 /* libzmq_la-epoll.Plo */,
+				2906CBE1165B23AF000D43E4 /* libzmq_la-err.Plo */,
+				2906CBE2165B23AF000D43E4 /* libzmq_la-fq.Plo */,
+				2906CBE3165B23AF000D43E4 /* libzmq_la-io_object.Plo */,
+				2906CBE4165B23AF000D43E4 /* libzmq_la-io_thread.Plo */,
+				2906CBE5165B23AF000D43E4 /* libzmq_la-ip.Plo */,
+				2906CBE6165B23AF000D43E4 /* libzmq_la-kqueue.Plo */,
+				2906CBE7165B23AF000D43E4 /* libzmq_la-lb.Plo */,
+				2906CBE8165B23AF000D43E4 /* libzmq_la-mailbox.Plo */,
+				2906CBE9165B23AF000D43E4 /* libzmq_la-named_session.Plo */,
+				2906CBEA165B23AF000D43E4 /* libzmq_la-object.Plo */,
+				2906CBEB165B23AF000D43E4 /* libzmq_la-options.Plo */,
+				2906CBEC165B23AF000D43E4 /* libzmq_la-own.Plo */,
+				2906CBED165B23AF000D43E4 /* libzmq_la-pair.Plo */,
+				2906CBEE165B23AF000D43E4 /* libzmq_la-pgm_receiver.Plo */,
+				2906CBEF165B23AF000D43E4 /* libzmq_la-pgm_sender.Plo */,
+				2906CBF0165B23AF000D43E4 /* libzmq_la-pgm_socket.Plo */,
+				2906CBF1165B23AF000D43E4 /* libzmq_la-pipe.Plo */,
+				2906CBF2165B23AF000D43E4 /* libzmq_la-poll.Plo */,
+				2906CBF3165B23AF000D43E4 /* libzmq_la-poller_base.Plo */,
+				2906CBF4165B23AF000D43E4 /* libzmq_la-pub.Plo */,
+				2906CBF5165B23AF000D43E4 /* libzmq_la-pull.Plo */,
+				2906CBF6165B23AF000D43E4 /* libzmq_la-push.Plo */,
+				2906CBF7165B23AF000D43E4 /* libzmq_la-reaper.Plo */,
+				2906CBF8165B23AF000D43E4 /* libzmq_la-rep.Plo */,
+				2906CBF9165B23AF000D43E4 /* libzmq_la-req.Plo */,
+				2906CBFA165B23AF000D43E4 /* libzmq_la-select.Plo */,
+				2906CBFB165B23AF000D43E4 /* libzmq_la-session.Plo */,
+				2906CBFC165B23AF000D43E4 /* libzmq_la-signaler.Plo */,
+				2906CBFD165B23AF000D43E4 /* libzmq_la-socket_base.Plo */,
+				2906CBFE165B23AF000D43E4 /* libzmq_la-sub.Plo */,
+				2906CBFF165B23AF000D43E4 /* libzmq_la-swap.Plo */,
+				2906CC00165B23AF000D43E4 /* libzmq_la-tcp_connecter.Plo */,
+				2906CC01165B23AF000D43E4 /* libzmq_la-tcp_listener.Plo */,
+				2906CC02165B23AF000D43E4 /* libzmq_la-tcp_socket.Plo */,
+				2906CC03165B23AF000D43E4 /* libzmq_la-thread.Plo */,
+				2906CC04165B23AF000D43E4 /* libzmq_la-transient_session.Plo */,
+				2906CC05165B23AF000D43E4 /* libzmq_la-trie.Plo */,
+				2906CC06165B23AF000D43E4 /* libzmq_la-uuid.Plo */,
+				2906CC07165B23AF000D43E4 /* libzmq_la-xpub.Plo */,
+				2906CC08165B23AF000D43E4 /* libzmq_la-xrep.Plo */,
+				2906CC09165B23AF000D43E4 /* libzmq_la-xreq.Plo */,
+				2906CC0A165B23AF000D43E4 /* libzmq_la-xsub.Plo */,
+				2906CC0B165B23AF000D43E4 /* libzmq_la-zmq.Plo */,
+				2906CC0C165B23AF000D43E4 /* libzmq_la-zmq_connecter.Plo */,
+				2906CC0D165B23AF000D43E4 /* libzmq_la-zmq_engine.Plo */,
+				2906CC0E165B23AF000D43E4 /* libzmq_la-zmq_init.Plo */,
+				2906CC0F165B23AF000D43E4 /* libzmq_la-zmq_listener.Plo */,
+			);
+			path = .deps;
+			sourceTree = "<group>";
+		};
+		2906CC9D165B23AF000D43E4 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				2906CC9E165B23AF000D43E4 /* .deps */,
+				2906CCA8165B23AF000D43E4 /* Makefile */,
+				2906CCA9165B23AF000D43E4 /* Makefile.am */,
+				2906CCAA165B23AF000D43E4 /* Makefile.in */,
+				2906CCAB165B23AF000D43E4 /* test_hwm.cpp */,
+				2906CCAC165B23AF000D43E4 /* test_pair_inproc.cpp */,
+				2906CCAD165B23AF000D43E4 /* test_pair_ipc.cpp */,
+				2906CCAE165B23AF000D43E4 /* test_pair_tcp.cpp */,
+				2906CCAF165B23AF000D43E4 /* test_reqrep_inproc.cpp */,
+				2906CCB0165B23AF000D43E4 /* test_reqrep_ipc.cpp */,
+				2906CCB1165B23AF000D43E4 /* test_reqrep_tcp.cpp */,
+				2906CCB2165B23AF000D43E4 /* test_shutdown_stress.cpp */,
+				2906CCB3165B23AF000D43E4 /* test_timeo.cpp */,
+				2906CCB4165B23AF000D43E4 /* testutil.hpp */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		2906CC9E165B23AF000D43E4 /* .deps */ = {
+			isa = PBXGroup;
+			children = (
+				2906CC9F165B23AF000D43E4 /* test_hwm.Po */,
+				2906CCA0165B23AF000D43E4 /* test_pair_inproc.Po */,
+				2906CCA1165B23AF000D43E4 /* test_pair_ipc.Po */,
+				2906CCA2165B23AF000D43E4 /* test_pair_tcp.Po */,
+				2906CCA3165B23AF000D43E4 /* test_reqrep_inproc.Po */,
+				2906CCA4165B23AF000D43E4 /* test_reqrep_ipc.Po */,
+				2906CCA5165B23AF000D43E4 /* test_reqrep_tcp.Po */,
+				2906CCA6165B23AF000D43E4 /* test_shutdown_stress.Po */,
+				2906CCA7165B23AF000D43E4 /* test_timeo.Po */,
+			);
+			path = .deps;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -100,6 +1403,92 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2906C7FD165B2001000D43E4 /* ZMQContext.h in Headers */,
+				2906C7FF165B2001000D43E4 /* ZMQObjC.h in Headers */,
+				2906C800165B2001000D43E4 /* ZMQSocket.h in Headers */,
+				2906CCC6165B23AF000D43E4 /* platform.hpp in Headers */,
+				2906CD3F165B23B0000D43E4 /* xmlParser.hpp in Headers */,
+				2906CD40165B23B0000D43E4 /* zmq.h in Headers */,
+				2906CD41165B23B0000D43E4 /* zmq.hpp in Headers */,
+				2906CD42165B23B0000D43E4 /* zmq_utils.h in Headers */,
+				2906CD93165B23B0000D43E4 /* array.hpp in Headers */,
+				2906CD94165B23B0000D43E4 /* atomic_counter.hpp in Headers */,
+				2906CD95165B23B0000D43E4 /* atomic_ptr.hpp in Headers */,
+				2906CD96165B23B0000D43E4 /* blob.hpp in Headers */,
+				2906CD98165B23B0000D43E4 /* clock.hpp in Headers */,
+				2906CD9A165B23B0000D43E4 /* command.hpp in Headers */,
+				2906CD9B165B23B0000D43E4 /* config.hpp in Headers */,
+				2906CD9D165B23B0000D43E4 /* connect_session.hpp in Headers */,
+				2906CD9F165B23B0000D43E4 /* ctx.hpp in Headers */,
+				2906CDA1165B23B0000D43E4 /* decoder.hpp in Headers */,
+				2906CDA3165B23B0000D43E4 /* device.hpp in Headers */,
+				2906CDA5165B23B0000D43E4 /* devpoll.hpp in Headers */,
+				2906CDA7165B23B0000D43E4 /* dist.hpp in Headers */,
+				2906CDA9165B23B0000D43E4 /* encoder.hpp in Headers */,
+				2906CDAB165B23B0000D43E4 /* epoll.hpp in Headers */,
+				2906CDAD165B23B0000D43E4 /* err.hpp in Headers */,
+				2906CDAE165B23B0000D43E4 /* fd.hpp in Headers */,
+				2906CDB0165B23B0000D43E4 /* fq.hpp in Headers */,
+				2906CDB1165B23B0000D43E4 /* gcc_421_char_traits.hpp in Headers */,
+				2906CDB2165B23B0000D43E4 /* i_engine.hpp in Headers */,
+				2906CDB3165B23B0000D43E4 /* i_inout.hpp in Headers */,
+				2906CDB4165B23B0000D43E4 /* i_poll_events.hpp in Headers */,
+				2906CDB6165B23B0000D43E4 /* io_object.hpp in Headers */,
+				2906CDB8165B23B0000D43E4 /* io_thread.hpp in Headers */,
+				2906CDBA165B23B0000D43E4 /* ip.hpp in Headers */,
+				2906CDBC165B23B0000D43E4 /* kqueue.hpp in Headers */,
+				2906CDBE165B23B0000D43E4 /* lb.hpp in Headers */,
+				2906CDC1165B23B0000D43E4 /* likely.hpp in Headers */,
+				2906CDC3165B23B0000D43E4 /* mailbox.hpp in Headers */,
+				2906CDC7165B23B0000D43E4 /* msg_content.hpp in Headers */,
+				2906CDC8165B23B0000D43E4 /* mutex.hpp in Headers */,
+				2906CDCA165B23B0000D43E4 /* named_session.hpp in Headers */,
+				2906CDCC165B23B0000D43E4 /* object.hpp in Headers */,
+				2906CDCE165B23B0000D43E4 /* options.hpp in Headers */,
+				2906CDD0165B23B0000D43E4 /* own.hpp in Headers */,
+				2906CDD2165B23B0000D43E4 /* pair.hpp in Headers */,
+				2906CDD4165B23B0000D43E4 /* pgm_receiver.hpp in Headers */,
+				2906CDD6165B23B0000D43E4 /* pgm_sender.hpp in Headers */,
+				2906CDD8165B23B0000D43E4 /* pgm_socket.hpp in Headers */,
+				2906CDDA165B23B0000D43E4 /* pipe.hpp in Headers */,
+				2906CDDB165B23B0000D43E4 /* platform.hpp in Headers */,
+				2906CDDE165B23B0000D43E4 /* poll.hpp in Headers */,
+				2906CDDF165B23B0000D43E4 /* poller.hpp in Headers */,
+				2906CDE1165B23B0000D43E4 /* poller_base.hpp in Headers */,
+				2906CDE3165B23B0000D43E4 /* pub.hpp in Headers */,
+				2906CDE5165B23B0000D43E4 /* pull.hpp in Headers */,
+				2906CDE7165B23B0000D43E4 /* push.hpp in Headers */,
+				2906CDE9165B23B0000D43E4 /* reaper.hpp in Headers */,
+				2906CDEB165B23B0000D43E4 /* rep.hpp in Headers */,
+				2906CDED165B23B0000D43E4 /* req.hpp in Headers */,
+				2906CDEF165B23B0000D43E4 /* select.hpp in Headers */,
+				2906CDF0165B23B0000D43E4 /* semaphore.hpp in Headers */,
+				2906CDF2165B23B0000D43E4 /* session.hpp in Headers */,
+				2906CDF4165B23B0000D43E4 /* signaler.hpp in Headers */,
+				2906CDF6165B23B0000D43E4 /* socket_base.hpp in Headers */,
+				2906CDF8165B23B0000D43E4 /* stdint.hpp in Headers */,
+				2906CDFA165B23B0000D43E4 /* sub.hpp in Headers */,
+				2906CDFC165B23B0000D43E4 /* swap.hpp in Headers */,
+				2906CDFE165B23B0000D43E4 /* tcp_connecter.hpp in Headers */,
+				2906CE00165B23B0000D43E4 /* tcp_listener.hpp in Headers */,
+				2906CE02165B23B0000D43E4 /* tcp_socket.hpp in Headers */,
+				2906CE04165B23B0000D43E4 /* thread.hpp in Headers */,
+				2906CE06165B23B0000D43E4 /* transient_session.hpp in Headers */,
+				2906CE08165B23B0000D43E4 /* trie.hpp in Headers */,
+				2906CE0A165B23B0000D43E4 /* uuid.hpp in Headers */,
+				2906CE0B165B23B0000D43E4 /* windows.hpp in Headers */,
+				2906CE0C165B23B0000D43E4 /* wire.hpp in Headers */,
+				2906CE0E165B23B0000D43E4 /* xpub.hpp in Headers */,
+				2906CE10165B23B0000D43E4 /* xrep.hpp in Headers */,
+				2906CE12165B23B0000D43E4 /* xreq.hpp in Headers */,
+				2906CE14165B23B0000D43E4 /* xsub.hpp in Headers */,
+				2906CE15165B23B0000D43E4 /* ypipe.hpp in Headers */,
+				2906CE16165B23B0000D43E4 /* yqueue.hpp in Headers */,
+				2906CE19165B23B0000D43E4 /* zmq_connecter.hpp in Headers */,
+				2906CE1B165B23B0000D43E4 /* zmq_engine.hpp in Headers */,
+				2906CE1D165B23B0000D43E4 /* zmq_init.hpp in Headers */,
+				2906CE1F165B23B0000D43E4 /* zmq_listener.hpp in Headers */,
+				2906CE35165B23B0000D43E4 /* testutil.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +1544,204 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2906C7E4165B1F7E000D43E4 /* InfoPlist.strings in Resources */,
+				2906CCB9165B23AF000D43E4 /* AUTHORS in Resources */,
+				2906CCBA165B23AF000D43E4 /* autogen.sh in Resources */,
+				2906CCBB165B23AF000D43E4 /* c_local_lat.vcproj in Resources */,
+				2906CCBC165B23AF000D43E4 /* c_local_thr.vcproj in Resources */,
+				2906CCBD165B23AF000D43E4 /* c_remote_lat.vcproj in Resources */,
+				2906CCBE165B23AF000D43E4 /* c_remote_thr.vcproj in Resources */,
+				2906CCBF165B23AF000D43E4 /* inproc_lat.vcproj in Resources */,
+				2906CCC0165B23AF000D43E4 /* inproc_thr.vcproj in Resources */,
+				2906CCC1165B23AF000D43E4 /* libzmq.vcproj in Resources */,
+				2906CCC3165B23AF000D43E4 /* Makefile.am in Resources */,
+				2906CCC4165B23AF000D43E4 /* Makefile.in in Resources */,
+				2906CCC5165B23AF000D43E4 /* msvc.sln in Resources */,
+				2906CCC9165B23AF000D43E4 /* ChangeLog in Resources */,
+				2906CCCA165B23AF000D43E4 /* compile in Resources */,
+				2906CCCB165B23AF000D43E4 /* config.guess in Resources */,
+				2906CCCC165B23AF000D43E4 /* config.sub in Resources */,
+				2906CCCD165B23AF000D43E4 /* depcomp in Resources */,
+				2906CCCE165B23AF000D43E4 /* install-sh in Resources */,
+				2906CCD0165B23AF000D43E4 /* ltmain.sh in Resources */,
+				2906CCD5165B23AF000D43E4 /* missing in Resources */,
+				2906CCD6165B23AF000D43E4 /* config.log in Resources */,
+				2906CCD7165B23AF000D43E4 /* config.status in Resources */,
+				2906CCD8165B23AF000D43E4 /* configure in Resources */,
+				2906CCDA165B23AF000D43E4 /* COPYING in Resources */,
+				2906CCDB165B23AF000D43E4 /* COPYING.LESSER in Resources */,
+				2906CCDC165B23AF000D43E4 /* asciidoc.conf in Resources */,
+				2906CCE0165B23AF000D43E4 /* zmq.7 in Resources */,
+				2906CCE1165B23AF000D43E4 /* zmq.html in Resources */,
+				2906CCE2165B23AF000D43E4 /* zmq.txt in Resources */,
+				2906CCE3165B23AF000D43E4 /* zmq_bind.3 in Resources */,
+				2906CCE4165B23AF000D43E4 /* zmq_bind.html in Resources */,
+				2906CCE5165B23AF000D43E4 /* zmq_bind.txt in Resources */,
+				2906CCE6165B23AF000D43E4 /* zmq_close.3 in Resources */,
+				2906CCE7165B23AF000D43E4 /* zmq_close.html in Resources */,
+				2906CCE8165B23AF000D43E4 /* zmq_close.txt in Resources */,
+				2906CCE9165B23AF000D43E4 /* zmq_connect.3 in Resources */,
+				2906CCEA165B23AF000D43E4 /* zmq_connect.html in Resources */,
+				2906CCEB165B23AF000D43E4 /* zmq_connect.txt in Resources */,
+				2906CCEC165B23AF000D43E4 /* zmq_cpp.7 in Resources */,
+				2906CCED165B23AF000D43E4 /* zmq_cpp.html in Resources */,
+				2906CCEE165B23AF000D43E4 /* zmq_cpp.txt in Resources */,
+				2906CCEF165B23AF000D43E4 /* zmq_device.3 in Resources */,
+				2906CCF0165B23AF000D43E4 /* zmq_device.html in Resources */,
+				2906CCF1165B23AF000D43E4 /* zmq_device.txt in Resources */,
+				2906CCF2165B23AF000D43E4 /* zmq_epgm.7 in Resources */,
+				2906CCF3165B23AF000D43E4 /* zmq_epgm.html in Resources */,
+				2906CCF4165B23AF000D43E4 /* zmq_epgm.txt in Resources */,
+				2906CCF5165B23AF000D43E4 /* zmq_errno.3 in Resources */,
+				2906CCF6165B23AF000D43E4 /* zmq_errno.html in Resources */,
+				2906CCF7165B23AF000D43E4 /* zmq_errno.txt in Resources */,
+				2906CCF8165B23AF000D43E4 /* zmq_getsockopt.3 in Resources */,
+				2906CCF9165B23AF000D43E4 /* zmq_getsockopt.html in Resources */,
+				2906CCFA165B23AF000D43E4 /* zmq_getsockopt.txt in Resources */,
+				2906CCFB165B23AF000D43E4 /* zmq_init.3 in Resources */,
+				2906CCFC165B23AF000D43E4 /* zmq_init.html in Resources */,
+				2906CCFD165B23AF000D43E4 /* zmq_init.txt in Resources */,
+				2906CCFE165B23AF000D43E4 /* zmq_inproc.7 in Resources */,
+				2906CCFF165B23AF000D43E4 /* zmq_inproc.html in Resources */,
+				2906CD00165B23AF000D43E4 /* zmq_inproc.txt in Resources */,
+				2906CD01165B23AF000D43E4 /* zmq_ipc.7 in Resources */,
+				2906CD02165B23B0000D43E4 /* zmq_ipc.html in Resources */,
+				2906CD03165B23B0000D43E4 /* zmq_ipc.txt in Resources */,
+				2906CD04165B23B0000D43E4 /* zmq_msg_close.3 in Resources */,
+				2906CD05165B23B0000D43E4 /* zmq_msg_close.html in Resources */,
+				2906CD06165B23B0000D43E4 /* zmq_msg_close.txt in Resources */,
+				2906CD07165B23B0000D43E4 /* zmq_msg_copy.3 in Resources */,
+				2906CD08165B23B0000D43E4 /* zmq_msg_copy.html in Resources */,
+				2906CD09165B23B0000D43E4 /* zmq_msg_copy.txt in Resources */,
+				2906CD0A165B23B0000D43E4 /* zmq_msg_data.3 in Resources */,
+				2906CD0B165B23B0000D43E4 /* zmq_msg_data.html in Resources */,
+				2906CD0C165B23B0000D43E4 /* zmq_msg_data.txt in Resources */,
+				2906CD0D165B23B0000D43E4 /* zmq_msg_init.3 in Resources */,
+				2906CD0E165B23B0000D43E4 /* zmq_msg_init.html in Resources */,
+				2906CD0F165B23B0000D43E4 /* zmq_msg_init.txt in Resources */,
+				2906CD10165B23B0000D43E4 /* zmq_msg_init_data.3 in Resources */,
+				2906CD11165B23B0000D43E4 /* zmq_msg_init_data.html in Resources */,
+				2906CD12165B23B0000D43E4 /* zmq_msg_init_data.txt in Resources */,
+				2906CD13165B23B0000D43E4 /* zmq_msg_init_size.3 in Resources */,
+				2906CD14165B23B0000D43E4 /* zmq_msg_init_size.html in Resources */,
+				2906CD15165B23B0000D43E4 /* zmq_msg_init_size.txt in Resources */,
+				2906CD16165B23B0000D43E4 /* zmq_msg_move.3 in Resources */,
+				2906CD17165B23B0000D43E4 /* zmq_msg_move.html in Resources */,
+				2906CD18165B23B0000D43E4 /* zmq_msg_move.txt in Resources */,
+				2906CD19165B23B0000D43E4 /* zmq_msg_size.3 in Resources */,
+				2906CD1A165B23B0000D43E4 /* zmq_msg_size.html in Resources */,
+				2906CD1B165B23B0000D43E4 /* zmq_msg_size.txt in Resources */,
+				2906CD1C165B23B0000D43E4 /* zmq_pgm.7 in Resources */,
+				2906CD1D165B23B0000D43E4 /* zmq_pgm.html in Resources */,
+				2906CD1E165B23B0000D43E4 /* zmq_pgm.txt in Resources */,
+				2906CD1F165B23B0000D43E4 /* zmq_poll.3 in Resources */,
+				2906CD20165B23B0000D43E4 /* zmq_poll.html in Resources */,
+				2906CD21165B23B0000D43E4 /* zmq_poll.txt in Resources */,
+				2906CD22165B23B0000D43E4 /* zmq_recv.3 in Resources */,
+				2906CD23165B23B0000D43E4 /* zmq_recv.html in Resources */,
+				2906CD24165B23B0000D43E4 /* zmq_recv.txt in Resources */,
+				2906CD25165B23B0000D43E4 /* zmq_send.3 in Resources */,
+				2906CD26165B23B0000D43E4 /* zmq_send.html in Resources */,
+				2906CD27165B23B0000D43E4 /* zmq_send.txt in Resources */,
+				2906CD28165B23B0000D43E4 /* zmq_setsockopt.3 in Resources */,
+				2906CD29165B23B0000D43E4 /* zmq_setsockopt.html in Resources */,
+				2906CD2A165B23B0000D43E4 /* zmq_setsockopt.txt in Resources */,
+				2906CD2B165B23B0000D43E4 /* zmq_socket.3 in Resources */,
+				2906CD2C165B23B0000D43E4 /* zmq_socket.html in Resources */,
+				2906CD2D165B23B0000D43E4 /* zmq_socket.txt in Resources */,
+				2906CD2E165B23B0000D43E4 /* zmq_strerror.3 in Resources */,
+				2906CD2F165B23B0000D43E4 /* zmq_strerror.html in Resources */,
+				2906CD30165B23B0000D43E4 /* zmq_strerror.txt in Resources */,
+				2906CD31165B23B0000D43E4 /* zmq_tcp.7 in Resources */,
+				2906CD32165B23B0000D43E4 /* zmq_tcp.html in Resources */,
+				2906CD33165B23B0000D43E4 /* zmq_tcp.txt in Resources */,
+				2906CD34165B23B0000D43E4 /* zmq_term.3 in Resources */,
+				2906CD35165B23B0000D43E4 /* zmq_term.html in Resources */,
+				2906CD36165B23B0000D43E4 /* zmq_term.txt in Resources */,
+				2906CD37165B23B0000D43E4 /* zmq_version.3 in Resources */,
+				2906CD38165B23B0000D43E4 /* zmq_version.html in Resources */,
+				2906CD39165B23B0000D43E4 /* zmq_version.txt in Resources */,
+				2906CD3A165B23B0000D43E4 /* libpgm-5.1.118~dfsg.tar.gz in Resources */,
+				2906CD43165B23B0000D43E4 /* INSTALL in Resources */,
+				2906CD44165B23B0000D43E4 /* libtool in Resources */,
+				2906CD45165B23B0000D43E4 /* MAINTAINERS in Resources */,
+				2906CD49165B23B0000D43E4 /* NEWS in Resources */,
+				2906CD4A165B23B0000D43E4 /* inproc_lat.Po in Resources */,
+				2906CD4B165B23B0000D43E4 /* inproc_thr.Po in Resources */,
+				2906CD4C165B23B0000D43E4 /* local_lat.Po in Resources */,
+				2906CD4D165B23B0000D43E4 /* local_thr.Po in Resources */,
+				2906CD4E165B23B0000D43E4 /* remote_lat.Po in Resources */,
+				2906CD4F165B23B0000D43E4 /* remote_thr.Po in Resources */,
+				2906CD59165B23B0000D43E4 /* README in Resources */,
+				2906CD5A165B23B0000D43E4 /* libzmq_la-clock.Plo in Resources */,
+				2906CD5B165B23B0000D43E4 /* libzmq_la-command.Plo in Resources */,
+				2906CD5C165B23B0000D43E4 /* libzmq_la-connect_session.Plo in Resources */,
+				2906CD5D165B23B0000D43E4 /* libzmq_la-ctx.Plo in Resources */,
+				2906CD5E165B23B0000D43E4 /* libzmq_la-decoder.Plo in Resources */,
+				2906CD5F165B23B0000D43E4 /* libzmq_la-device.Plo in Resources */,
+				2906CD60165B23B0000D43E4 /* libzmq_la-devpoll.Plo in Resources */,
+				2906CD61165B23B0000D43E4 /* libzmq_la-dist.Plo in Resources */,
+				2906CD62165B23B0000D43E4 /* libzmq_la-encoder.Plo in Resources */,
+				2906CD63165B23B0000D43E4 /* libzmq_la-epoll.Plo in Resources */,
+				2906CD64165B23B0000D43E4 /* libzmq_la-err.Plo in Resources */,
+				2906CD65165B23B0000D43E4 /* libzmq_la-fq.Plo in Resources */,
+				2906CD66165B23B0000D43E4 /* libzmq_la-io_object.Plo in Resources */,
+				2906CD67165B23B0000D43E4 /* libzmq_la-io_thread.Plo in Resources */,
+				2906CD68165B23B0000D43E4 /* libzmq_la-ip.Plo in Resources */,
+				2906CD69165B23B0000D43E4 /* libzmq_la-kqueue.Plo in Resources */,
+				2906CD6A165B23B0000D43E4 /* libzmq_la-lb.Plo in Resources */,
+				2906CD6B165B23B0000D43E4 /* libzmq_la-mailbox.Plo in Resources */,
+				2906CD6C165B23B0000D43E4 /* libzmq_la-named_session.Plo in Resources */,
+				2906CD6D165B23B0000D43E4 /* libzmq_la-object.Plo in Resources */,
+				2906CD6E165B23B0000D43E4 /* libzmq_la-options.Plo in Resources */,
+				2906CD6F165B23B0000D43E4 /* libzmq_la-own.Plo in Resources */,
+				2906CD70165B23B0000D43E4 /* libzmq_la-pair.Plo in Resources */,
+				2906CD71165B23B0000D43E4 /* libzmq_la-pgm_receiver.Plo in Resources */,
+				2906CD72165B23B0000D43E4 /* libzmq_la-pgm_sender.Plo in Resources */,
+				2906CD73165B23B0000D43E4 /* libzmq_la-pgm_socket.Plo in Resources */,
+				2906CD74165B23B0000D43E4 /* libzmq_la-pipe.Plo in Resources */,
+				2906CD75165B23B0000D43E4 /* libzmq_la-poll.Plo in Resources */,
+				2906CD76165B23B0000D43E4 /* libzmq_la-poller_base.Plo in Resources */,
+				2906CD77165B23B0000D43E4 /* libzmq_la-pub.Plo in Resources */,
+				2906CD78165B23B0000D43E4 /* libzmq_la-pull.Plo in Resources */,
+				2906CD79165B23B0000D43E4 /* libzmq_la-push.Plo in Resources */,
+				2906CD7A165B23B0000D43E4 /* libzmq_la-reaper.Plo in Resources */,
+				2906CD7B165B23B0000D43E4 /* libzmq_la-rep.Plo in Resources */,
+				2906CD7C165B23B0000D43E4 /* libzmq_la-req.Plo in Resources */,
+				2906CD7D165B23B0000D43E4 /* libzmq_la-select.Plo in Resources */,
+				2906CD7E165B23B0000D43E4 /* libzmq_la-session.Plo in Resources */,
+				2906CD7F165B23B0000D43E4 /* libzmq_la-signaler.Plo in Resources */,
+				2906CD80165B23B0000D43E4 /* libzmq_la-socket_base.Plo in Resources */,
+				2906CD81165B23B0000D43E4 /* libzmq_la-sub.Plo in Resources */,
+				2906CD82165B23B0000D43E4 /* libzmq_la-swap.Plo in Resources */,
+				2906CD83165B23B0000D43E4 /* libzmq_la-tcp_connecter.Plo in Resources */,
+				2906CD84165B23B0000D43E4 /* libzmq_la-tcp_listener.Plo in Resources */,
+				2906CD85165B23B0000D43E4 /* libzmq_la-tcp_socket.Plo in Resources */,
+				2906CD86165B23B0000D43E4 /* libzmq_la-thread.Plo in Resources */,
+				2906CD87165B23B0000D43E4 /* libzmq_la-transient_session.Plo in Resources */,
+				2906CD88165B23B0000D43E4 /* libzmq_la-trie.Plo in Resources */,
+				2906CD89165B23B0000D43E4 /* libzmq_la-uuid.Plo in Resources */,
+				2906CD8A165B23B0000D43E4 /* libzmq_la-xpub.Plo in Resources */,
+				2906CD8B165B23B0000D43E4 /* libzmq_la-xrep.Plo in Resources */,
+				2906CD8C165B23B0000D43E4 /* libzmq_la-xreq.Plo in Resources */,
+				2906CD8D165B23B0000D43E4 /* libzmq_la-xsub.Plo in Resources */,
+				2906CD8E165B23B0000D43E4 /* libzmq_la-zmq.Plo in Resources */,
+				2906CD8F165B23B0000D43E4 /* libzmq_la-zmq_connecter.Plo in Resources */,
+				2906CD90165B23B0000D43E4 /* libzmq_la-zmq_engine.Plo in Resources */,
+				2906CD91165B23B0000D43E4 /* libzmq_la-zmq_init.Plo in Resources */,
+				2906CD92165B23B0000D43E4 /* libzmq_la-zmq_listener.Plo in Resources */,
+				2906CDBF165B23B0000D43E4 /* libzmq.pc in Resources */,
+				2906CDC0165B23B0000D43E4 /* libzmq.pc.in in Resources */,
+				2906CDF7165B23B0000D43E4 /* stamp-h1 in Resources */,
+				2906CE20165B23B0000D43E4 /* test_hwm.Po in Resources */,
+				2906CE21165B23B0000D43E4 /* test_pair_inproc.Po in Resources */,
+				2906CE22165B23B0000D43E4 /* test_pair_ipc.Po in Resources */,
+				2906CE23165B23B0000D43E4 /* test_pair_tcp.Po in Resources */,
+				2906CE24165B23B0000D43E4 /* test_reqrep_inproc.Po in Resources */,
+				2906CE25165B23B0000D43E4 /* test_reqrep_ipc.Po in Resources */,
+				2906CE26165B23B0000D43E4 /* test_reqrep_tcp.Po in Resources */,
+				2906CE27165B23B0000D43E4 /* test_shutdown_stress.Po in Resources */,
+				2906CE28165B23B0000D43E4 /* test_timeo.Po in Resources */,
+				2906CE36165B23B0000D43E4 /* version.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +1752,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2906C7E8165B1F7E000D43E4 /* objc_zmq_frame.m in Sources */,
+				2906C7FE165B2001000D43E4 /* ZMQContext.m in Sources */,
+				2906C801165B2001000D43E4 /* ZMQSocket.m in Sources */,
+				2906CD3E165B23B0000D43E4 /* xmlParser.cpp in Sources */,
+				2906CD97165B23B0000D43E4 /* clock.cpp in Sources */,
+				2906CD99165B23B0000D43E4 /* command.cpp in Sources */,
+				2906CD9C165B23B0000D43E4 /* connect_session.cpp in Sources */,
+				2906CD9E165B23B0000D43E4 /* ctx.cpp in Sources */,
+				2906CDA0165B23B0000D43E4 /* decoder.cpp in Sources */,
+				2906CDA2165B23B0000D43E4 /* device.cpp in Sources */,
+				2906CDA4165B23B0000D43E4 /* devpoll.cpp in Sources */,
+				2906CDA6165B23B0000D43E4 /* dist.cpp in Sources */,
+				2906CDA8165B23B0000D43E4 /* encoder.cpp in Sources */,
+				2906CDAA165B23B0000D43E4 /* epoll.cpp in Sources */,
+				2906CDAC165B23B0000D43E4 /* err.cpp in Sources */,
+				2906CDAF165B23B0000D43E4 /* fq.cpp in Sources */,
+				2906CDB5165B23B0000D43E4 /* io_object.cpp in Sources */,
+				2906CDB7165B23B0000D43E4 /* io_thread.cpp in Sources */,
+				2906CDB9165B23B0000D43E4 /* ip.cpp in Sources */,
+				2906CDBB165B23B0000D43E4 /* kqueue.cpp in Sources */,
+				2906CDBD165B23B0000D43E4 /* lb.cpp in Sources */,
+				2906CDC2165B23B0000D43E4 /* mailbox.cpp in Sources */,
+				2906CDC9165B23B0000D43E4 /* named_session.cpp in Sources */,
+				2906CDCB165B23B0000D43E4 /* object.cpp in Sources */,
+				2906CDCD165B23B0000D43E4 /* options.cpp in Sources */,
+				2906CDCF165B23B0000D43E4 /* own.cpp in Sources */,
+				2906CDD1165B23B0000D43E4 /* pair.cpp in Sources */,
+				2906CDD3165B23B0000D43E4 /* pgm_receiver.cpp in Sources */,
+				2906CDD5165B23B0000D43E4 /* pgm_sender.cpp in Sources */,
+				2906CDD7165B23B0000D43E4 /* pgm_socket.cpp in Sources */,
+				2906CDD9165B23B0000D43E4 /* pipe.cpp in Sources */,
+				2906CDDD165B23B0000D43E4 /* poll.cpp in Sources */,
+				2906CDE0165B23B0000D43E4 /* poller_base.cpp in Sources */,
+				2906CDE2165B23B0000D43E4 /* pub.cpp in Sources */,
+				2906CDE4165B23B0000D43E4 /* pull.cpp in Sources */,
+				2906CDE6165B23B0000D43E4 /* push.cpp in Sources */,
+				2906CDE8165B23B0000D43E4 /* reaper.cpp in Sources */,
+				2906CDEA165B23B0000D43E4 /* rep.cpp in Sources */,
+				2906CDEC165B23B0000D43E4 /* req.cpp in Sources */,
+				2906CDEE165B23B0000D43E4 /* select.cpp in Sources */,
+				2906CDF1165B23B0000D43E4 /* session.cpp in Sources */,
+				2906CDF3165B23B0000D43E4 /* signaler.cpp in Sources */,
+				2906CDF5165B23B0000D43E4 /* socket_base.cpp in Sources */,
+				2906CDF9165B23B0000D43E4 /* sub.cpp in Sources */,
+				2906CDFB165B23B0000D43E4 /* swap.cpp in Sources */,
+				2906CDFD165B23B0000D43E4 /* tcp_connecter.cpp in Sources */,
+				2906CDFF165B23B0000D43E4 /* tcp_listener.cpp in Sources */,
+				2906CE01165B23B0000D43E4 /* tcp_socket.cpp in Sources */,
+				2906CE03165B23B0000D43E4 /* thread.cpp in Sources */,
+				2906CE05165B23B0000D43E4 /* transient_session.cpp in Sources */,
+				2906CE07165B23B0000D43E4 /* trie.cpp in Sources */,
+				2906CE09165B23B0000D43E4 /* uuid.cpp in Sources */,
+				2906CE0D165B23B0000D43E4 /* xpub.cpp in Sources */,
+				2906CE0F165B23B0000D43E4 /* xrep.cpp in Sources */,
+				2906CE11165B23B0000D43E4 /* xreq.cpp in Sources */,
+				2906CE13165B23B0000D43E4 /* xsub.cpp in Sources */,
+				2906CE17165B23B0000D43E4 /* zmq.cpp in Sources */,
+				2906CE18165B23B0000D43E4 /* zmq_connecter.cpp in Sources */,
+				2906CE1A165B23B0000D43E4 /* zmq_engine.cpp in Sources */,
+				2906CE1C165B23B0000D43E4 /* zmq_init.cpp in Sources */,
+				2906CE1E165B23B0000D43E4 /* zmq_listener.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
